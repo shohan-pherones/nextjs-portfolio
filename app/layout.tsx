@@ -1,11 +1,11 @@
-import Navbar from "@/components/Navbar";
-import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Footer from "@/components/Footer";
+import { Space_Grotesk } from "next/font/google";
 import clsx from "clsx";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Md. Shohanur Rahman | Home",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx(inter.className, "bg-light text-dark")}>
+      <body className={clsx(spaceGrotesk.className, "bg-light text-dark")}>
         <Navbar />
         {children}
         <Footer />
