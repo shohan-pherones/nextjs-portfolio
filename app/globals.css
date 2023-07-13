@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* BROWSER STYLES */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #21242b;
+  height: 10%;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+::selection {
+  color: #f4f4f4;
+  background-color: #21242b;
+}
+
+/* BASE STYLES */
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
 /* COMMON STYLES */
 .wrapper {
   @apply container mx-auto px-5 md:px-0;
@@ -21,5 +47,17 @@
 }
 
 .link-item:hover::after {
+  @apply w-full;
+}
+
+.link-item-dark {
+  @apply relative;
+}
+
+.link-item-dark::after {
+  @apply content-[""] absolute w-0 h-[1px] bg-dark left-1/2 -translate-x-1/2 bottom-0 duration-300;
+}
+
+.link-item-dark:hover::after {
   @apply w-full;
 }
