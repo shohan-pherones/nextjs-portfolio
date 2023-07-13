@@ -13,7 +13,7 @@ const Navbar = () => {
               className="w-12 h-12 overflow-hidden rounded-full inline-block hover:brightness-75 duration-300"
             >
               <Image
-                src="https://res.cloudinary.com/dpkbthpcw/image/upload/v1689173952/nextjs-portfolio/assets/profile/Profile_Photo_of_Mine_jn1jmc.jpg"
+                src="https://res.cloudinary.com/dpkbthpcw/image/upload/v1689227673/nextjs-portfolio/assets/profile/Profile_Photo_Red_Shirt_qwci0o.jpg"
                 alt="Profile photo of Md. Shohanur Rahman"
                 width={50}
                 height={50}
