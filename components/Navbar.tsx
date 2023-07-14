@@ -1,10 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <header className="bg-dark text-light w-fit h-20 fixed bottom-10 left-1/2 -translate-x-1/2 flex justify-center items-center px-10 rounded-xl border border-light/20 z-50">
+    <motion.header
+      initial={{ translateY: "100vh", translateX: "-50%" }}
+      animate={{ translateY: 0 }}
+      transition={{ ease: "easeInOut", duration: 2 }}
+      className="bg-dark text-light w-fit h-20 fixed bottom-10 left-1/2 -translate-x-1/2 flex justify-center items-center px-10 rounded-xl border border-light/20 z-50"
+    >
       <nav>
         <ul className="flex items-center gap-10">
           <li className="flex items-center">
@@ -54,7 +62,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

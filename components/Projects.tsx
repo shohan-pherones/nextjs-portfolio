@@ -8,9 +8,10 @@ const Projects = () => {
       <SectionTitle title="Selected Works (2022 - 2023)" subtitle="Projects" />
       {/* PROJECTS */}
       <div className="grid lg:grid-cols-2 gap-10 ">
-        {data.map((project: any) => (
+        {data.map((project: any, index: number) => (
           <ProjectCard
             key={project.id}
+            index={index}
             title={project.title}
             image={project.image}
             description={project.description}
