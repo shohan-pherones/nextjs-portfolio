@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <header className="bg-dark text-light w-fit h-20 fixed bottom-10 left-1/2 -translate-x-1/2 flex justify-center items-center px-10 rounded-xl border border-light/20">
+    <header className="bg-dark text-light w-fit h-20 fixed bottom-10 left-1/2 -translate-x-1/2 flex justify-center items-center px-10 rounded-xl border border-light/20 z-50">
       <nav>
         <ul className="flex items-center gap-10">
           <li className="flex items-center">

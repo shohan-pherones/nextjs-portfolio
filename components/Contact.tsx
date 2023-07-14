@@ -61,7 +61,13 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-dark/50">Address</h3>
-              <p>Sirajganj, Bangladesh</p>
+              <Link
+                href="https://goo.gl/maps/WFSWfFP4WdQNxthCA"
+                target="_blank"
+                className="link-item-dark"
+              >
+                Sirajganj, Bangladesh
+              </Link>
             </div>
           </div>
         </div>
