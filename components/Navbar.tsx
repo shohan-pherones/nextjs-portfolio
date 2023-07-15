@@ -63,7 +63,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Button href="/" target="_blank" color="light">
+              <Button
+                href="https://drive.google.com/uc?export=download&id=1MmrbUJ62LWCU3zZxTlnqXAEuclBlRLFh"
+                target="_blank"
+                color="alt"
+              >
                 Download Résumé
               </Button>
             </li>
@@ -71,7 +75,12 @@ const Navbar = () => {
         </nav>
       </motion.header>
       {/* MOBILE NAV */}
-      <header className="bg-dark/90 backdrop-blur-lg text-light fixed bottom-0 left-0 right-0 flex items-center px-5 sm:px-10 h-20 border-t border-light/20 z-50 lg:hidden">
+      <motion.header
+        initial={{ translateY: "100vh" }}
+        animate={{ translateY: 0 }}
+        transition={getTransition(1.2, 1)}
+        className="bg-dark text-light fixed bottom-0 left-0 right-0 flex items-center px-5 sm:px-10 h-20 border-t border-light/20 z-50 lg:hidden"
+      >
         <nav className="w-full">
           <ul className="flex justify-between items-center gap-5 sm:gap-10">
             <li
@@ -94,7 +103,11 @@ const Navbar = () => {
             </li>
             <div className="flex items-center gap-5">
               <li onClick={() => setIsNavOpen(false)}>
-                <Button href="/" target="_blank" color="light">
+                <Button
+                  href="https://drive.google.com/uc?export=download&id=1MmrbUJ62LWCU3zZxTlnqXAEuclBlRLFh"
+                  target="_blank"
+                  color="alt"
+                >
                   Download Résumé
                 </Button>
               </li>
@@ -124,7 +137,7 @@ const Navbar = () => {
             </div>
           </ul>
         </nav>
-      </header>
+      </motion.header>
       {/* OVERLAY FOR MOBILE NAV*/}
       <div
         onClick={() => setIsNavOpen(false)}
@@ -137,7 +150,7 @@ const Navbar = () => {
       <nav
         onClick={() => setIsNavOpen(false)}
         className={clsx(
-          "fixed bottom-0 left-1/2 right-0 h-[calc(100vh-15rem)] w-[calc(100vw-5rem)] -translate-x-1/2 bg-dark/90 backdrop-blur-lg z-[49] rounded-tl-xl rounded-tr-xl border border-light/25 duration-500 text-light flex justify-center items-center lg:hidden",
+          "fixed bottom-0 left-0 right-0 h-[calc(100vh-15rem)] w-full bg-dark z-[49] rounded-tl-[2.5rem] border border-light/25 duration-500 text-light flex justify-center items-center lg:hidden",
           isNavOpen ? "translate-y-0" : "translate-y-[100vh]"
         )}
       >
