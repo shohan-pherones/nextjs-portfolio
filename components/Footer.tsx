@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="wrapper section-padding mb-[7.5rem]">
+    <footer className="wrapper section-padding mb-[5rem] lg:mb-[7.5rem]">
       <div className="overflow-hidden">
         <motion.p
           initial={{ y: "-100%" }}
