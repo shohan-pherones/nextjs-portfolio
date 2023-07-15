@@ -8,9 +8,10 @@ const Blogs = () => {
       <SectionTitle title="Timeworthy Articles" subtitle="Blogs" />
       {/* BLOGS */}
       <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-10">
-        {data.map((blog: any) => (
+        {data.map((blog: any, index: number) => (
           <BlogCard
             key={blog.id}
+            index={index}
             image={blog.image}
             title={blog.title}
             author={blog.author}

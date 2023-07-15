@@ -1,7 +1,9 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { toast } from "react-hot-toast";
+import { getTransition } from "@/utils/getTransition";
 import emailjs from "@emailjs/browser";
 
 const Form = () => {
@@ -51,8 +53,11 @@ const Form = () => {
       className="w-full flex flex-col gap-5 items-start"
     >
       <div className="flex gap-5 w-full">
-        <div className="form-control w-full">
-          <input
+        <div className="form-control w-full overflow-hidden">
+          <motion.input
+            initial={{ x: "-100%" }}
+            whileInView={{ x: 0 }}
+            transition={getTransition()}
             required
             type="text"
             name="fullname"
@@ -64,8 +69,11 @@ const Form = () => {
             className="w-full bg-transparent border-b border-dark/25 outline-none pb-1 focus-within:border-dark duration-300"
           />
         </div>
-        <div className="form-control w-full">
-          <input
+        <div className="form-control w-full overflow-hidden">
+          <motion.input
+            initial={{ x: "-100%" }}
+            whileInView={{ x: 0 }}
+            transition={getTransition(0.2)}
             required
             type="email"
             name="email"
@@ -78,8 +86,11 @@ const Form = () => {
           />
         </div>
       </div>
-      <div className="form-control w-full">
-        <textarea
+      <div className="form-control w-full overflow-hidden">
+        <motion.textarea
+          initial={{ x: "-100%" }}
+          whileInView={{ x: 0 }}
+          transition={getTransition(0.4)}
           required
           rows={7}
           name="message"
@@ -91,12 +102,17 @@ const Form = () => {
           className="w-full bg-transparent border-b border-dark/25 outline-none pb-1 focus-within:border-dark duration-300 resize-none"
         />
       </div>
-      <button
-        type="submit"
-        className="px-5 py-3 rounded-lg duration-300 bg-dark text-light hover:bg-dark/80"
-      >
-        Submit
-      </button>
+      <div className="overflow-hidden">
+        <motion.button
+          initial={{ y: "100%" }}
+          whileInView={{ y: 0 }}
+          transition={getTransition(0.6)}
+          type="submit"
+          className="px-5 py-3 rounded-lg duration-300 bg-dark text-light hover:bg-dark/80"
+        >
+          Submit
+        </motion.button>
+      </div>
     </form>
   );
 };

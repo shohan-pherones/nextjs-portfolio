@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { getTransition } from "@/utils/getTransition";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
@@ -10,7 +11,7 @@ const Navbar = () => {
     <motion.header
       initial={{ translateY: "100vh", translateX: "-50%" }}
       animate={{ translateY: 0 }}
-      transition={{ ease: "easeInOut", duration: 2 }}
+      transition={getTransition(1.2, 1)}
       className="bg-dark text-light w-fit h-20 fixed bottom-10 left-1/2 -translate-x-1/2 flex justify-center items-center px-10 rounded-xl border border-light/20 z-50"
     >
       <nav>

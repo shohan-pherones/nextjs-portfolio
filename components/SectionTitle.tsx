@@ -1,5 +1,6 @@
 "use client";
 
+import { getTransition } from "@/utils/getTransition";
 import { motion } from "framer-motion";
 
 interface SectionTitleProps {
@@ -13,14 +14,14 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => {
       <motion.p
         initial={{ y: "-100%" }}
         whileInView={{ y: 0 }}
-        transition={{ ease: "easeInOut", duration: 0.75 }}
+        transition={getTransition()}
       >
         {subtitle}
       </motion.p>
       <motion.h2
         initial={{ y: "100%" }}
         whileInView={{ y: 0 }}
-        transition={{ ease: "easeInOut", duration: 0.75 }}
+        transition={getTransition()}
         className="text-4xl font-semibold"
       >
         {title}

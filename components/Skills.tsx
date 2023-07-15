@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { data } from "@/data/skills";
 import { BsDot } from "react-icons/bs";
+import { getTransition } from "@/utils/getTransition";
 import SectionTitle from "./SectionTitle";
 
 const Skills = () => {
@@ -16,7 +17,7 @@ const Skills = () => {
           <motion.div
             initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1.5 }}
+            transition={getTransition()}
             className="p-10 rounded-xl bg-dark w-full h-full"
           >
             <h3 className="text-2xl font-semibold">Front-End</h3>
@@ -37,7 +38,7 @@ const Skills = () => {
           <motion.div
             initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1.5, delay: 0.2 }}
+            transition={getTransition(0.1)}
             className="p-10 rounded-xl bg-dark w-full h-full"
           >
             <h3 className="text-2xl font-semibold">Back-End</h3>
@@ -58,7 +59,7 @@ const Skills = () => {
           <motion.div
             initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1.5, delay: 0.4 }}
+            transition={getTransition(0.2)}
             className="p-10 rounded-xl bg-dark w-full h-full"
           >
             <h3 className="text-2xl font-semibold">Tools</h3>
@@ -79,7 +80,7 @@ const Skills = () => {
           <motion.div
             initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1.5, delay: 0.6 }}
+            transition={getTransition(0.3)}
             className="p-10 rounded-xl bg-dark w-full h-full"
           >
             <h3 className="text-2xl font-semibold">Interpersonal</h3>

@@ -1,5 +1,6 @@
 "use client";
 
+import { getTransition } from "@/utils/getTransition";
 import { motion } from "framer-motion";
 
 const HeroHeadlines = () => {
@@ -10,14 +11,14 @@ const HeroHeadlines = () => {
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={{ ease: "easeInOut", duration: 1 }}
+          transition={getTransition()}
         >
           Md. Shohanur
         </motion.h2>
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={{ ease: "easeInOut", duration: 1, delay: 0.3 }}
+          transition={getTransition(0.2)}
         >
           Rahman
         </motion.h2>
@@ -25,7 +26,7 @@ const HeroHeadlines = () => {
       <motion.hr
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        transition={{ ease: "easeInOut", duration: 2 }}
+        transition={getTransition(0, 1)}
         className="border-dark/50"
       />
       {/* LINE TWO */}
@@ -33,7 +34,7 @@ const HeroHeadlines = () => {
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
+          transition={getTransition(0.4)}
         >
           Creative
         </motion.h2>
@@ -41,7 +42,7 @@ const HeroHeadlines = () => {
       <motion.hr
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        transition={{ ease: "easeInOut", duration: 2, delay: 0.3 }}
+        transition={getTransition(0.2, 1)}
         className="border-dark/50"
       />
       {/* LINE THREE */}
@@ -49,14 +50,14 @@ const HeroHeadlines = () => {
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={{ ease: "easeInOut", duration: 1, delay: 0.9 }}
+          transition={getTransition(0.6)}
         >
           Full-Stack
         </motion.h2>
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={{ ease: "easeInOut", duration: 1, delay: 1.2 }}
+          transition={getTransition(0.8)}
         >
           Developer
         </motion.h2>
@@ -64,7 +65,7 @@ const HeroHeadlines = () => {
       <motion.hr
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        transition={{ ease: "easeInOut", duration: 2, delay: 0.6 }}
+        transition={getTransition(0.4, 1)}
         className="border-dark/50"
       />
       {/* LINE FOUR */}
@@ -72,14 +73,14 @@ const HeroHeadlines = () => {
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={{ ease: "easeInOut", duration: 1, delay: 1.5 }}
+          transition={getTransition(1)}
         >
           Based in
         </motion.h2>
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={{ ease: "easeInOut", duration: 1, delay: 1.8 }}
+          transition={getTransition(1.2)}
         >
           Bangladesh
         </motion.h2>
@@ -87,7 +88,7 @@ const HeroHeadlines = () => {
       <motion.hr
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        transition={{ ease: "easeInOut", duration: 2, delay: 0.9 }}
+        transition={getTransition(0.6, 1)}
         className="border-dark/50"
       />
     </div>

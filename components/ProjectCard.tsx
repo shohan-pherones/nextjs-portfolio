@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { getTransition } from "@/utils/getTransition";
 import Image from "next/image";
 import Button from "./Button";
 
@@ -32,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <motion.div
         initial={{ y: "-100%" }}
         whileInView={{ y: 0 }}
-        transition={{ ease: "easeInOut", duration: 1.5, delay: index / 5 }}
+        transition={getTransition(index / 10, 1)}
         className="w-full h-full bg-dark text-light p-10 rounded-xl"
       >
         {/* CONTENTS */}

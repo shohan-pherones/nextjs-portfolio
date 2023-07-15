@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { getTransition } from "@/utils/getTransition";
 import Link from "next/link";
 import SectionTitle from "./SectionTitle";
 import Form from "./Form";
@@ -10,64 +14,89 @@ const Contact = () => {
       <div className="grid grid-cols-2 gap-10">
         {/* CONTACTS */}
         <div className="flex flex-col gap-5">
-          <h3 className="text-2xl font-semibold max-w-lg">{`Let's unlock together the next level of possibilities! Reach out.`}</h3>
-          <div>
-            <h3 className="text-2xl font-semibold text-dark/50">
-              Social Media
-            </h3>
-            <div className="flex gap-5">
-              <Link
-                href="https://github.com/shohan-pherones"
-                target="_blank"
-                className="link-item-dark"
-              >
-                GitHub
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/shohan-pherones"
-                target="_blank"
-                className="link-item-dark"
-              >
-                LinkedIn
-              </Link>
-              <Link
-                href="https://twitter.com/elysianshohan"
-                target="_blank"
-                className="link-item-dark"
-              >
-                Twitter
-              </Link>
-              <Link
-                href="https://www.facebook.com/spectra.shohan"
-                target="_blank"
-                className="link-item-dark"
-              >
-                Facebook
-              </Link>
-            </div>
+          <div className="overflow-hidden">
+            <motion.h3
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+              className="text-2xl font-semibold max-w-lg"
+            >{`Let's unlock together the next level of possibilities! Reach out.`}</motion.h3>
+          </div>
+          <div className="overflow-hidden">
+            <motion.div
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={getTransition(0.2)}
+            >
+              <h3 className="text-2xl font-semibold text-dark/50">
+                Social Media
+              </h3>
+              <div className="flex gap-5">
+                <Link
+                  href="https://github.com/shohan-pherones"
+                  target="_blank"
+                  className="link-item-dark"
+                >
+                  GitHub
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/shohan-pherones"
+                  target="_blank"
+                  className="link-item-dark"
+                >
+                  LinkedIn
+                </Link>
+                <Link
+                  href="https://twitter.com/elysianshohan"
+                  target="_blank"
+                  className="link-item-dark"
+                >
+                  Twitter
+                </Link>
+                <Link
+                  href="https://www.facebook.com/spectra.shohan"
+                  target="_blank"
+                  className="link-item-dark"
+                >
+                  Facebook
+                </Link>
+              </div>
+            </motion.div>
           </div>
           <div className="flex gap-5">
-            <div>
-              <h3 className="text-2xl font-semibold text-dark/50">
-                Hello, my mail awaits!
-              </h3>
-              <Link
-                href="mailto:shohan.sub.56@gmail.com"
-                target="_blank"
-                className="link-item-dark"
+            <div className="overflow-hidden">
+              <motion.div
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.4)}
               >
-                shohan.sub.56@gmail.com
-              </Link>
+                <h3 className="text-2xl font-semibold text-dark/50">
+                  Hello, my mail awaits!
+                </h3>
+                <Link
+                  href="mailto:shohan.sub.56@gmail.com"
+                  target="_blank"
+                  className="link-item-dark"
+                >
+                  shohan.sub.56@gmail.com
+                </Link>
+              </motion.div>
             </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-dark/50">Address</h3>
-              <Link
-                href="https://goo.gl/maps/WFSWfFP4WdQNxthCA"
-                target="_blank"
-                className="link-item-dark"
+            <div className="overflow-hidden">
+              <motion.div
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.6)}
               >
-                Sirajganj, Bangladesh
-              </Link>
+                <h3 className="text-2xl font-semibold text-dark/50">Address</h3>
+                <Link
+                  href="https://goo.gl/maps/WFSWfFP4WdQNxthCA"
+                  target="_blank"
+                  className="link-item-dark"
+                >
+                  Sirajganj, Bangladesh
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
