@@ -1,14 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { getTransition } from "@/utils/getTransition";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import clsx from "clsx";
 
 const Navbar = () => {
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+
   return (
     <>
+      {/* DESKTOP NAV */}
       <motion.header
         initial={{ translateY: "100vh", translateX: "-50%" }}
         animate={{ translateY: 0 }}
@@ -66,10 +71,13 @@ const Navbar = () => {
         </nav>
       </motion.header>
       {/* MOBILE NAV */}
-      <header className="bg-dark/90 backdrop-blur-lg text-light fixed bottom-0 left-0 right-0 flex items-center px-5 sm:px-10 h-20 border-t border-light/20 z-50">
+      <header className="bg-dark/90 backdrop-blur-lg text-light fixed bottom-0 left-0 right-0 flex items-center px-5 sm:px-10 h-20 border-t border-light/20 z-50 lg:hidden">
         <nav className="w-full">
-          <ul className="flex justify-between items-center gap-10">
-            <li className="flex items-center">
+          <ul className="flex justify-between items-center gap-5 sm:gap-10">
+            <li
+              onClick={() => setIsNavOpen(false)}
+              className="flex items-center"
+            >
               <Link
                 href="/"
                 className="w-12 h-12 overflow-hidden rounded-full inline-block hover:brightness-75 duration-300"
@@ -84,14 +92,113 @@ const Navbar = () => {
                 />
               </Link>
             </li>
-            <li>
-              <Button href="/" target="_blank" color="light">
-                Download Résumé
-              </Button>
-            </li>
+            <div className="flex items-center gap-5">
+              <li onClick={() => setIsNavOpen(false)}>
+                <Button href="/" target="_blank" color="light">
+                  Download Résumé
+                </Button>
+              </li>
+              <li
+                onClick={() => setIsNavOpen(!isNavOpen)}
+                className="flex flex-col gap-2 w-6 cursor-pointer"
+              >
+                <span
+                  className={clsx(
+                    "origin-left w-full h-[1px] bg-light duration-300",
+                    isNavOpen ? "rotate-45" : "rotate-0"
+                  )}
+                ></span>
+                <span
+                  className={clsx(
+                    "w-3/5 h-[1px] bg-light duration-300",
+                    isNavOpen ? "translate-x-[100vw]" : "translate-x-0"
+                  )}
+                ></span>
+                <span
+                  className={clsx(
+                    "origin-left w-full h-[1px] bg-light duration-300",
+                    isNavOpen ? "-rotate-45" : "rotate-0"
+                  )}
+                ></span>
+              </li>
+            </div>
           </ul>
         </nav>
       </header>
+      {/* OVERLAY FOR MOBILE NAV*/}
+      <div
+        onClick={() => setIsNavOpen(false)}
+        className={clsx(
+          "z-[48] fixed top-0 left-0 bottom-0 right-0 bg-transparent lg:hidden",
+          isNavOpen ? "block" : "hidden"
+        )}
+      ></div>
+      {/* MOBILE MENU AS MODAL */}
+      <nav
+        onClick={() => setIsNavOpen(false)}
+        className={clsx(
+          "fixed bottom-0 left-1/2 right-0 h-[calc(100vh-15rem)] w-[calc(100vw-5rem)] -translate-x-1/2 bg-dark/90 backdrop-blur-lg z-[49] rounded-tl-xl rounded-tr-xl border border-light/25 duration-500 text-light flex justify-center items-center lg:hidden",
+          isNavOpen ? "translate-y-0" : "translate-y-[100vh]"
+        )}
+      >
+        <ul className="text-2xl flex flex-col gap-5">
+          <div className="overflow-hidden">
+            <motion.li
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+            >
+              <Link href="/" className="link-item">
+                Home
+              </Link>
+            </motion.li>
+          </div>
+          <div className="overflow-hidden">
+            <motion.li
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={getTransition(0.1)}
+            >
+              <Link href="/#projects" className="link-item">
+                Projects
+              </Link>
+            </motion.li>
+          </div>
+          <div className="overflow-hidden">
+            <motion.li
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={getTransition(0.2)}
+            >
+              <Link href="/#skills" className="link-item">
+                Skills
+              </Link>
+            </motion.li>
+          </div>
+          <div className="overflow-hidden">
+            <motion.li
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={getTransition(0.3)}
+            >
+              <Link href="/#blogs" className="link-item">
+                Blogs
+              </Link>
+            </motion.li>
+          </div>
+          <div className="overflow-hidden">
+            <motion.li
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={getTransition(0.4)}
+            >
+              <Link href="/#contact" className="link-item">
+                Contact
+              </Link>
+            </motion.li>
+          </div>
+        </ul>
+      </nav>
     </>
   );
 };
