@@ -11,7 +11,7 @@ const Contact = () => {
     <section id="contact" className="wrapper section-padding">
       <SectionTitle title="Get In Touch" subtitle="Contact" />
       {/* CONTENTS */}
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-10">
         {/* CONTACTS */}
         <div className="flex flex-col gap-5">
           <div className="overflow-hidden">
@@ -19,7 +19,7 @@ const Contact = () => {
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
               transition={getTransition()}
-              className="text-2xl font-semibold max-w-lg"
+              className="text-2xl font-semibold md:max-w-lg"
             >{`Let's unlock together the next level of possibilities! Reach out.`}</motion.h3>
           </div>
           <div className="overflow-hidden">
@@ -31,7 +31,7 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold text-dark/50">
                 Social Media
               </h3>
-              <div className="flex gap-5">
+              <div className="flex flex-wrap gap-2 sm:gap-5">
                 <Link
                   href="https://github.com/shohan-pherones"
                   target="_blank"
@@ -63,7 +63,7 @@ const Contact = () => {
               </div>
             </motion.div>
           </div>
-          <div className="flex gap-5">
+          <div className="flex flex-col sm:flex-row gap-5">
             <div className="overflow-hidden">
               <motion.div
                 initial={{ y: "100%" }}

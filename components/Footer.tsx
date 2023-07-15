@@ -12,7 +12,7 @@ const Footer = () => {
           initial={{ y: "-100%" }}
           whileInView={{ y: 0 }}
           transition={getTransition()}
-          className="w-2/5 text-dark/50"
+          className="sm:w-4/5 md:w-3/5 lg:w-2/5 text-dark/50"
         >
           Loosely sketched in{" "}
           <Link

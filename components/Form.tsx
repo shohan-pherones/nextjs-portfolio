@@ -52,7 +52,7 @@ const Form = () => {
       onSubmit={handleSubmit}
       className="w-full flex flex-col gap-5 items-start"
     >
-      <div className="flex gap-5 w-full">
+      <div className="flex flex-col sm:flex-row gap-5 w-full">
         <div className="form-control w-full overflow-hidden">
           <motion.input
             initial={{ x: "-100%" }}

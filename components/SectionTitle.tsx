@@ -22,7 +22,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => {
         initial={{ y: "100%" }}
         whileInView={{ y: 0 }}
         transition={getTransition()}
-        className="text-4xl font-semibold"
+        className="text-3xl md:text-4xl font-semibold"
       >
         {title}
       </motion.h2>

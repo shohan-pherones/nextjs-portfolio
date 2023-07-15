@@ -34,12 +34,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         initial={{ y: "-100%" }}
         whileInView={{ y: 0 }}
         transition={getTransition(index / 10, 1)}
-        className="w-full h-full bg-dark text-light p-10 rounded-xl"
+        className="w-full h-full bg-dark text-light p-5 md:p-10 rounded-xl"
       >
         {/* CONTENTS */}
         <div>
           {/* IMAGE */}
-          <div className="w-full h-[25rem] overflow-hidden rounded-lg">
+          <div className="w-full h-[15rem] sm:h-[25rem] overflow-hidden rounded-lg">
             <Image
               src={image}
               alt={title}

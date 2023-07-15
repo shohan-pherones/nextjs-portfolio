@@ -35,7 +35,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
         transition={getTransition(index / 10)}
         className="w-full h-full bg-light overflow-hidden rounded-xl border border-dark/10"
       >
-        <div className="w-full h-[15rem] overflow-hidden">
+        <div className="w-full h-[10rem] sm:h-[15rem] overflow-hidden">
           <Image
             src={image}
             alt={title}
