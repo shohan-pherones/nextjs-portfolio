@@ -9,7 +9,7 @@ const HeroImageItem: React.FC<HeroImageItemProps> = ({ image }) => {
     <div className="w-full h-full overflow-hidden group z-[3]">
       <Image
         src={image}
-        alt="Hero image"
+        alt="Hero Image"
         width={500}
         height={300}
         priority
