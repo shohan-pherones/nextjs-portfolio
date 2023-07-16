@@ -101,7 +101,7 @@ const Navbar = () => {
                 />
               </Link>
             </li>
-            <div className="flex items-center gap-5">
+            <ul className="flex items-center gap-5">
               <li onClick={() => setIsNavOpen(false)}>
                 <Button
                   href="https://drive.google.com/uc?export=download&id=1MmrbUJ62LWCU3zZxTlnqXAEuclBlRLFh"
@@ -134,7 +134,7 @@ const Navbar = () => {
                   )}
                 ></span>
               </li>
-            </div>
+            </ul>
           </ul>
         </nav>
       </motion.header>
@@ -155,7 +155,7 @@ const Navbar = () => {
         )}
       >
         <ul className="text-2xl flex flex-col gap-5">
-          <div className="overflow-hidden">
+          <ul className="overflow-hidden">
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
@@ -165,8 +165,8 @@ const Navbar = () => {
                 Home
               </Link>
             </motion.li>
-          </div>
-          <div className="overflow-hidden">
+          </ul>
+          <ul className="overflow-hidden">
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
@@ -176,8 +176,8 @@ const Navbar = () => {
                 Projects
               </Link>
             </motion.li>
-          </div>
-          <div className="overflow-hidden">
+          </ul>
+          <ul className="overflow-hidden">
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
@@ -187,8 +187,8 @@ const Navbar = () => {
                 Skills
               </Link>
             </motion.li>
-          </div>
-          <div className="overflow-hidden">
+          </ul>
+          <ul className="overflow-hidden">
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
@@ -198,8 +198,8 @@ const Navbar = () => {
                 Blogs
               </Link>
             </motion.li>
-          </div>
-          <div className="overflow-hidden">
+          </ul>
+          <ul className="overflow-hidden">
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
@@ -209,7 +209,7 @@ const Navbar = () => {
                 Contact
               </Link>
             </motion.li>
-          </div>
+          </ul>
         </ul>
       </nav>
     </>
