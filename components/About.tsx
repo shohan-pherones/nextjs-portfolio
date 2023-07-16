@@ -24,8 +24,8 @@ const About = () => {
               <Image
                 src="https://res.cloudinary.com/dpkbthpcw/image/upload/v1689517576/nextjs-portfolio/assets/about/01_oavpwg.jpg"
                 alt="Profile photo of Md. Shohanur Rahman"
-                width={300}
-                height={500}
+                width={100}
+                height={200}
                 priority
                 className="w-full h-full object-cover"
               />
@@ -41,8 +41,8 @@ const About = () => {
               <Image
                 src="https://res.cloudinary.com/dpkbthpcw/image/upload/v1689517576/nextjs-portfolio/assets/about/03_xt9hpa.jpg"
                 alt="Profile photo of Md. Shohanur Rahman"
-                width={300}
-                height={500}
+                width={100}
+                height={200}
                 priority
                 className="w-full h-full object-cover"
               />
@@ -58,8 +58,8 @@ const About = () => {
               <Image
                 src="https://res.cloudinary.com/dpkbthpcw/image/upload/v1689517575/nextjs-portfolio/assets/about/02_ona7xm.jpg"
                 alt="Profile photo of Md. Shohanur Rahman"
-                width={300}
-                height={500}
+                width={100}
+                height={200}
                 priority
                 className="w-full h-full object-cover"
               />

@@ -30,8 +30,8 @@ const Navbar = () => {
                 <Image
                   src="https://res.cloudinary.com/dpkbthpcw/image/upload/v1689227673/nextjs-portfolio/assets/profile/Profile_Photo_Red_Shirt_qwci0o.jpg"
                   alt="Profile photo of Md. Shohanur Rahman"
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                   priority
                   className="w-full h-full object-cover"
                 />
@@ -99,8 +99,8 @@ const Navbar = () => {
                 <Image
                   src="https://res.cloudinary.com/dpkbthpcw/image/upload/v1689227673/nextjs-portfolio/assets/profile/Profile_Photo_Red_Shirt_qwci0o.jpg"
                   alt="Profile photo of Md. Shohanur Rahman"
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                   priority
                   className="w-full h-full object-cover"
                 />

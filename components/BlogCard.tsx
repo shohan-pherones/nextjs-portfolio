@@ -39,8 +39,8 @@ const BlogCard: React.FC<BlogCardProps> = ({
           <Image
             src={image}
             alt={title}
-            width={1280}
-            height={720}
+            width={500}
+            height={300}
             priority
             className="w-full h-full object-cover"
           />

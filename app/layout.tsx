@@ -13,6 +13,7 @@ const baiJamjuree = Bai_Jamjuree({
 
 export const metadata: Metadata = {
   title: "Md. Shohanur Rahman | Portfolio",
+  description: "Developer portfolio website of Md. Shohanur Rahman.",
 };
 
 export default function RootLayout({
