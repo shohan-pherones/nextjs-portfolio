@@ -17,7 +17,7 @@ const Navbar = () => {
       <motion.header
         initial={{ translateY: "100vh", translateX: "-50%" }}
         animate={{ translateY: 0 }}
-        transition={getTransition(1.2, 1)}
+        transition={getTransition(0.35, 1.5)}
         className="bg-dark text-light hidden lg:w-10/12 xl:w-8/12 w-7/12 max-w-4xl h-20 fixed bottom-10 left-1/2 -translate-x-1/2 lg:flex justify-center items-center px-10 rounded-xl border border-light/20 z-50"
       >
         <nav>
@@ -66,7 +66,7 @@ const Navbar = () => {
               <Button
                 href="https://drive.google.com/uc?export=download&id=1MmrbUJ62LWCU3zZxTlnqXAEuclBlRLFh"
                 target="_blank"
-                color="alt"
+                color="light"
               >
                 Download Résumé
               </Button>
@@ -78,8 +78,8 @@ const Navbar = () => {
       <motion.header
         initial={{ translateY: "100vh" }}
         animate={{ translateY: 0 }}
-        transition={getTransition(1.2, 1)}
-        className="bg-dark text-light fixed bottom-0 left-0 right-0 flex items-center px-5 sm:px-10 h-20 border-t border-light/20 z-50 lg:hidden"
+        transition={getTransition(0.35, 1.5)}
+        className="bg-dark text-light fixed bottom-0 left-0 right-0 flex items-center px-5 sm:px-10 h-20 border-t border-light/20 z-[102] lg:hidden"
       >
         <nav className="w-full">
           <ul className="flex justify-between items-center gap-5 sm:gap-10">
@@ -106,7 +106,7 @@ const Navbar = () => {
                 <Button
                   href="https://drive.google.com/uc?export=download&id=1MmrbUJ62LWCU3zZxTlnqXAEuclBlRLFh"
                   target="_blank"
-                  color="alt"
+                  color="light"
                 >
                   Download Résumé
                 </Button>
@@ -142,7 +142,7 @@ const Navbar = () => {
       <div
         onClick={() => setIsNavOpen(false)}
         className={clsx(
-          "z-[48] fixed top-0 left-0 bottom-0 right-0 bg-transparent lg:hidden",
+          "z-[100] fixed top-0 left-0 bottom-0 right-0 bg-transparent lg:hidden",
           isNavOpen ? "block" : "hidden"
         )}
       ></div>
@@ -150,7 +150,7 @@ const Navbar = () => {
       <nav
         onClick={() => setIsNavOpen(false)}
         className={clsx(
-          "fixed bottom-0 left-0 right-0 h-[calc(100vh-15rem)] w-full bg-dark z-[49] rounded-tl-[2.5rem] border border-light/25 duration-500 text-light flex justify-center items-center lg:hidden",
+          "fixed bottom-20 left-0 right-0 h-[calc(100vh-15rem)] w-full bg-dark z-[101] rounded-tl-[3rem] border-t border-light/20 duration-500 text-light flex justify-center items-center lg:hidden",
           isNavOpen ? "translate-y-0" : "translate-y-[100vh]"
         )}
       >
@@ -159,7 +159,7 @@ const Navbar = () => {
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
-              transition={getTransition()}
+              transition={getTransition(0, 0.5)}
             >
               <Link href="/" className="link-item">
                 Home
@@ -170,7 +170,7 @@ const Navbar = () => {
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
-              transition={getTransition(0.1)}
+              transition={getTransition(0.1, 0.5)}
             >
               <Link href="/#projects" className="link-item">
                 Projects
@@ -181,7 +181,7 @@ const Navbar = () => {
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
-              transition={getTransition(0.2)}
+              transition={getTransition(0.2, 0.5)}
             >
               <Link href="/#skills" className="link-item">
                 Skills
@@ -192,7 +192,7 @@ const Navbar = () => {
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
-              transition={getTransition(0.3)}
+              transition={getTransition(0.3, 0.5)}
             >
               <Link href="/#blogs" className="link-item">
                 Blogs
@@ -203,7 +203,7 @@ const Navbar = () => {
             <motion.li
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
-              transition={getTransition(0.4)}
+              transition={getTransition(0.4, 0.5)}
             >
               <Link href="/#contact" className="link-item">
                 Contact

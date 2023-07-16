@@ -5,20 +5,20 @@ import { motion } from "framer-motion";
 
 const HeroHeadlines = () => {
   return (
-    <div className="absolute w-full h-full -z-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold uppercase flex flex-col justify-center">
+    <div className="absolute w-full h-full z-[2] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold uppercase flex flex-col justify-center">
       {/* LINE ONE */}
       <div className="flex justify-between overflow-hidden">
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={getTransition()}
+          transition={getTransition(1.4)}
         >
           Md. Shohanur <span className="block sm:hidden">Rahman</span>
         </motion.h2>
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={getTransition(0.2)}
+          transition={getTransition(1.6)}
           className="hidden sm:block"
         >
           Rahman
@@ -27,7 +27,7 @@ const HeroHeadlines = () => {
       <motion.hr
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        transition={getTransition(0, 1)}
+        transition={getTransition(1.2, 1.5)}
         className="border-dark/50"
       />
       {/* LINE TWO */}
@@ -35,7 +35,7 @@ const HeroHeadlines = () => {
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={getTransition(0.4)}
+          transition={getTransition(1.8)}
         >
           Creative
         </motion.h2>
@@ -43,7 +43,7 @@ const HeroHeadlines = () => {
       <motion.hr
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        transition={getTransition(0.2, 1)}
+        transition={getTransition(1.4, 1.5)}
         className="border-dark/50"
       />
       {/* LINE THREE */}
@@ -51,14 +51,14 @@ const HeroHeadlines = () => {
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={getTransition(0.6)}
+          transition={getTransition(2)}
         >
           Full-Stack <span className="block sm:hidden">Developer</span>
         </motion.h2>
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={getTransition(0.8)}
+          transition={getTransition(2.2)}
           className="hidden sm:block"
         >
           Developer
@@ -67,7 +67,7 @@ const HeroHeadlines = () => {
       <motion.hr
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        transition={getTransition(0.4, 1)}
+        transition={getTransition(1.6, 1.5)}
         className="border-dark/50"
       />
       {/* LINE FOUR */}
@@ -75,14 +75,14 @@ const HeroHeadlines = () => {
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={getTransition(1)}
+          transition={getTransition(2.4)}
         >
           Based in <span className="block sm:hidden">Bangladesh</span>
         </motion.h2>
         <motion.h2
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
-          transition={getTransition(1.2)}
+          transition={getTransition(2.6)}
           className="hidden sm:block"
         >
           Bangladesh
@@ -91,7 +91,7 @@ const HeroHeadlines = () => {
       <motion.hr
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
-        transition={getTransition(0.6, 1)}
+        transition={getTransition(1.8, 1.5)}
         className="border-dark/50"
       />
     </div>

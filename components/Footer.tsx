@@ -20,7 +20,7 @@ const Footer = () => {
             target="_blank"
             className="text-dark link-item-dark"
           >
-            Adobe Photoshop
+            Adobe_Photoshop
           </Link>{" "}
           and coded in{" "}
           <Link
@@ -28,7 +28,7 @@ const Footer = () => {
             target="_blank"
             className="text-dark link-item-dark"
           >
-            Visual Studio Code
+            Visual_Studio_Code
           </Link>{" "}
           by yours truly. Built with{" "}
           <Link
@@ -44,7 +44,7 @@ const Footer = () => {
             target="_blank"
             className="text-dark link-item-dark"
           >
-            Tailwind CSS
+            Tailwind_CSS
           </Link>
           , deployed with{" "}
           <Link
@@ -56,11 +56,11 @@ const Footer = () => {
           </Link>
           . All text is set in the{" "}
           <Link
-            href="https://fonts.google.com/specimen/Space+Grotesk"
+            href="https://fonts.google.com/specimen/Bai+Jamjuree"
             target="_blank"
             className="text-dark link-item-dark"
           >
-            Space Grotesk
+            Bai_Jamjuree
           </Link>{" "}
           typeface.
         </motion.p>

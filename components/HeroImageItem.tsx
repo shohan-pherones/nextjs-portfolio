@@ -6,7 +6,7 @@ interface HeroImageItemProps {
 
 const HeroImageItem: React.FC<HeroImageItemProps> = ({ image }) => {
   return (
-    <div className="w-full h-full overflow-hidden group">
+    <div className="w-full h-full overflow-hidden group z-[3]">
       <Image
         src={image}
         alt="Hero image"

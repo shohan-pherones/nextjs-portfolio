@@ -7,7 +7,6 @@ const buttonVariants = cva("px-5 py-3 rounded-lg duration-300", {
     color: {
       dark: "bg-dark text-light hover:bg-dark/80",
       light: "bg-light text-dark hover:bg-light/20 hover:text-light",
-      alt: "bg-alt text-dark hover:bg-alt/80",
     },
   },
   defaultVariants: {
