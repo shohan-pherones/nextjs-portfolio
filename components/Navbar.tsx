@@ -18,7 +18,7 @@ const Navbar = () => {
         initial={{ translateY: "100vh", translateX: "-50%" }}
         animate={{ translateY: 0 }}
         transition={getTransition(0.35, 1.5)}
-        className="bg-dark text-light hidden lg:w-10/12 xl:w-8/12 w-7/12 max-w-4xl h-20 fixed bottom-10 left-1/2 -translate-x-1/2 lg:flex justify-center items-center px-10 rounded-xl border border-light/20 z-50"
+        className="bg-dark text-light hidden lg:w-11/12 xl:w-9/12 w-7/12 max-w-4xl h-20 fixed bottom-10 left-1/2 -translate-x-1/2 lg:flex justify-center items-center px-10 rounded-xl border border-light/20 z-50"
       >
         <nav>
           <ul className="flex items-center gap-10">
@@ -40,6 +40,11 @@ const Navbar = () => {
             <li>
               <Link href="/" className="link-item">
                 Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/#about" className="link-item">
+                About
               </Link>
             </li>
             <li>
@@ -101,8 +106,8 @@ const Navbar = () => {
                 />
               </Link>
             </li>
-            <ul className="flex items-center gap-5">
-              <li onClick={() => setIsNavOpen(false)}>
+            <li className="flex items-center gap-5">
+              <div onClick={() => setIsNavOpen(false)}>
                 <Button
                   href="https://drive.google.com/uc?export=download&id=1MmrbUJ62LWCU3zZxTlnqXAEuclBlRLFh"
                   target="_blank"
@@ -110,8 +115,8 @@ const Navbar = () => {
                 >
                   Download Résumé
                 </Button>
-              </li>
-              <li
+              </div>
+              <div
                 onClick={() => setIsNavOpen(!isNavOpen)}
                 className="flex flex-col gap-2 w-6 cursor-pointer"
               >
@@ -133,8 +138,8 @@ const Navbar = () => {
                     isNavOpen ? "-rotate-45" : "rotate-0"
                   )}
                 ></span>
-              </li>
-            </ul>
+              </div>
+            </li>
           </ul>
         </nav>
       </motion.header>
@@ -155,8 +160,8 @@ const Navbar = () => {
         )}
       >
         <ul className="text-2xl flex flex-col gap-5">
-          <ul className="overflow-hidden">
-            <motion.li
+          <li className="overflow-hidden">
+            <motion.div
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
               transition={getTransition(0, 0.5)}
@@ -164,10 +169,10 @@ const Navbar = () => {
               <Link href="/" className="link-item">
                 Home
               </Link>
-            </motion.li>
-          </ul>
-          <ul className="overflow-hidden">
-            <motion.li
+            </motion.div>
+          </li>
+          <li className="overflow-hidden">
+            <motion.div
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
               transition={getTransition(0.1, 0.5)}
@@ -175,10 +180,10 @@ const Navbar = () => {
               <Link href="/#projects" className="link-item">
                 Projects
               </Link>
-            </motion.li>
-          </ul>
-          <ul className="overflow-hidden">
-            <motion.li
+            </motion.div>
+          </li>
+          <li className="overflow-hidden">
+            <motion.div
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
               transition={getTransition(0.2, 0.5)}
@@ -186,10 +191,10 @@ const Navbar = () => {
               <Link href="/#skills" className="link-item">
                 Skills
               </Link>
-            </motion.li>
-          </ul>
-          <ul className="overflow-hidden">
-            <motion.li
+            </motion.div>
+          </li>
+          <li className="overflow-hidden">
+            <motion.div
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
               transition={getTransition(0.3, 0.5)}
@@ -197,10 +202,10 @@ const Navbar = () => {
               <Link href="/#blogs" className="link-item">
                 Blogs
               </Link>
-            </motion.li>
-          </ul>
-          <ul className="overflow-hidden">
-            <motion.li
+            </motion.div>
+          </li>
+          <li className="overflow-hidden">
+            <motion.div
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
               transition={getTransition(0.4, 0.5)}
@@ -208,8 +213,8 @@ const Navbar = () => {
               <Link href="/#contact" className="link-item">
                 Contact
               </Link>
-            </motion.li>
-          </ul>
+            </motion.div>
+          </li>
         </ul>
       </nav>
     </>
