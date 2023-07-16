@@ -10,8 +10,8 @@ const HeroImageItem: React.FC<HeroImageItemProps> = ({ image }) => {
       <Image
         src={image}
         alt="Hero Image"
-        width={100}
-        height={50}
+        width={300}
+        height={200}
         priority
         className="w-full h-full object-cover duration-300 invisible group-hover:visible"
       />
