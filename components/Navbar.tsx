@@ -175,6 +175,17 @@ const Navbar = () => {
             <motion.div
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
+              transition={getTransition(0, 0.5)}
+            >
+              <Link href="/#about" className="link-item">
+                About
+              </Link>
+            </motion.div>
+          </li>
+          <li className="overflow-hidden">
+            <motion.div
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
               transition={getTransition(0.1, 0.5)}
             >
               <Link href="/#projects" className="link-item">

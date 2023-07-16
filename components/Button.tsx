@@ -2,7 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import Link from "next/link";
 import clsx from "clsx";
 
-const buttonVariants = cva("px-5 py-3 rounded-lg duration-300", {
+const buttonVariants = cva("px-5 py-3 rounded-lg duration-300 inline-block", {
   variants: {
     color: {
       dark: "bg-dark text-light hover:bg-dark/80",

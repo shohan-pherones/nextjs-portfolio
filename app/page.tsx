@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
@@ -8,6 +9,7 @@ const HomePage = () => {
   return (
     <main>
       <Hero />
+      <About />
       <Projects />
       <Skills />
       <Blogs />
