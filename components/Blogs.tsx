@@ -6,7 +6,7 @@ const Blogs = () => {
   return (
     <section id="blogs" className="wrapper section-padding">
       <SectionTitle title="Timeworthy Articles" subtitle="Blogs" />
-      {/* BLOGS */}
+
       <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-10">
         {data.map((blog: any, index: number) => (
           <BlogCard

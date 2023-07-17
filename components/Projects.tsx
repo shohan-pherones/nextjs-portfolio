@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section id="projects" className="wrapper section-padding">
       <SectionTitle title="Selected Works (2022 - 2023)" subtitle="Projects" />
-      {/* PROJECTS */}
+
       <div className="grid lg:grid-cols-2 gap-10 ">
         {data.map((project: any, index: number) => (
           <ProjectCard

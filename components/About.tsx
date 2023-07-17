@@ -74,11 +74,12 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition()}
             >
-              Hi there, I am Md. Shohanur Rahman and I am a passionate web
-              developer with a strong focus on MERN (MongoDB, Express.js,
-              React.js, Node.js) stack. I have been working on various projects
-              leveraging my favorite technologies such as Next.js, React.js,
-              TypeScript, Node.js, Express.js, and Tailwind CSS.
+              Hi there, I am Md. Shohanur Rahman and I am a passionate
+              full-stack web developer with a strong focus on MERN (MongoDB,
+              Express.js, React.js, Node.js) stack. I have been working on
+              various projects leveraging my favorite technologies such as
+              Next.js, React.js, TypeScript, Node.js, Express.js, and Tailwind
+              CSS.
             </motion.p>
           </div>
           <div className="overflow-hidden hidden sm:block">

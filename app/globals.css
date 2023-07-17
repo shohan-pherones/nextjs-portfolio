@@ -38,26 +38,21 @@ html {
 }
 
 /* LINK STYLES */
-.link-item {
-  @apply relative;
-}
-
-.link-item::after {
-  @apply content-[""] absolute w-0 h-[1px] bg-light left-1/2 -translate-x-1/2 bottom-0 duration-300;
-}
-
-.link-item:hover::after {
-  @apply w-full;
-}
-
+.link-item,
 .link-item-dark {
   @apply relative;
 }
 
+.link-item::after,
 .link-item-dark::after {
-  @apply content-[""] absolute w-0 h-[1px] bg-dark left-1/2 -translate-x-1/2 bottom-0 duration-300;
+  @apply content-[""] absolute w-0 h-[1px] bg-light left-1/2 -translate-x-1/2 bottom-0 duration-300;
 }
 
+.link-item-dark::after {
+  @apply bg-dark;
+}
+
+.link-item:hover::after,
 .link-item-dark:hover::after {
   @apply w-full;
 }

@@ -40,6 +40,13 @@ const Contact = () => {
                   GitHub
                 </Link>
                 <Link
+                  href="https://leetcode.com/spectrashohan"
+                  target="_blank"
+                  className="link-item-dark"
+                >
+                  LeetCode
+                </Link>
+                <Link
                   href="https://www.linkedin.com/in/shohan-pherones"
                   target="_blank"
                   className="link-item-dark"
