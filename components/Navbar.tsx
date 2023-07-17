@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import clsx from "clsx";
+import { RESUME_LINK } from "@/constants/resume";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
@@ -68,11 +69,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Button
-                href="https://drive.google.com/uc?export=download&id=1MmrbUJ62LWCU3zZxTlnqXAEuclBlRLFh"
-                target="_blank"
-                color="light"
-              >
+              <Button href={RESUME_LINK} target="_blank" color="light">
                 Download Résumé
               </Button>
             </li>
@@ -108,11 +105,7 @@ const Navbar = () => {
             </li>
             <li className="flex items-center gap-5">
               <div onClick={() => setIsNavOpen(false)}>
-                <Button
-                  href="https://drive.google.com/uc?export=download&id=1MmrbUJ62LWCU3zZxTlnqXAEuclBlRLFh"
-                  target="_blank"
-                  color="light"
-                >
+                <Button href={RESUME_LINK} target="_blank" color="light">
                   Download Résumé
                 </Button>
               </div>
