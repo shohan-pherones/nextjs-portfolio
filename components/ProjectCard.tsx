@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { getTransition } from "@/utils/getTransition";
+import { useMediaQuery } from "@mantine/hooks";
 import Image from "next/image";
 import Button from "./Button";
 
@@ -28,6 +29,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   back,
   full,
 }) => {
+  const mobile = useMediaQuery("(max-width: 640px)");
+
   return (
     <div className="w-full overflow-hidden">
       <motion.div
@@ -52,7 +55,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {/* TEXT CONTENTS */}
           <div className="mt-10 flex flex-col gap-5">
             <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="text-light/60">{description}</p>
+            <p className="text-light/60">
+              {mobile ? description.substring(0, 200) : description}
+              {mobile ? "..." : null}
+            </p>
             {/* TECH */}
             <div className="flex gap-3 flex-wrap">
               {tech.split(", ").map((tag: string, i: number) => (

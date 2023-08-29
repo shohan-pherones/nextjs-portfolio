@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { getTransition } from "@/utils/getTransition";
+import { useMediaQuery } from "@mantine/hooks";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
@@ -27,6 +28,8 @@ const BlogCard: React.FC<BlogCardProps> = ({
   body,
   blogUrl,
 }) => {
+  const mobile = useMediaQuery("(max-width: 640px)");
+
   return (
     <div className="w-full h-full overflow-hidden">
       <motion.article
@@ -60,7 +63,10 @@ const BlogCard: React.FC<BlogCardProps> = ({
             </p>
             <p className="text-dark">{publishedDate}</p>
           </div>
-          <p>{body}</p>
+          <p>
+            {mobile ? body.substring(0, 200) : body}
+            {mobile ? "..." : null}
+          </p>
           <Button href={blogUrl} target="_blank">
             Read Full Article
           </Button>
