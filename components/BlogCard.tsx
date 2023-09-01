@@ -33,7 +33,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   return (
     <div className="w-full h-full overflow-hidden">
       <motion.article
-        initial={{ y: "100%" }}
+        initial={{ y: "-100%" }}
         whileInView={{ y: 0 }}
         transition={getTransition(index / 10)}
         className="w-full h-full bg-light overflow-hidden rounded-xl border border-dark/10"

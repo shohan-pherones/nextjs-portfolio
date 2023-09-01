@@ -15,7 +15,7 @@ const Skills = () => {
         {/* FRONT-END */}
         <div className="overflow-hidden w-full h-full">
           <motion.div
-            initial={{ y: "100%" }}
+            initial={{ y: "-100%" }}
             whileInView={{ y: 0 }}
             transition={getTransition()}
             className="p-10 rounded-xl bg-dark w-full h-full"
@@ -36,7 +36,7 @@ const Skills = () => {
         {/* BACK-END */}
         <div className="overflow-hidden w-full h-full">
           <motion.div
-            initial={{ y: "100%" }}
+            initial={{ y: "-100%" }}
             whileInView={{ y: 0 }}
             transition={getTransition(0.1)}
             className="p-10 rounded-xl bg-dark w-full h-full"
@@ -57,7 +57,7 @@ const Skills = () => {
         {/* TOOLS */}
         <div className="overflow-hidden w-full h-full">
           <motion.div
-            initial={{ y: "100%" }}
+            initial={{ y: "-100%" }}
             whileInView={{ y: 0 }}
             transition={getTransition(0.2)}
             className="p-10 rounded-xl bg-dark w-full h-full"
@@ -78,7 +78,7 @@ const Skills = () => {
         {/* INTERPERSONAL */}
         <div className="overflow-hidden w-full h-full">
           <motion.div
-            initial={{ y: "100%" }}
+            initial={{ y: "-100%" }}
             whileInView={{ y: 0 }}
             transition={getTransition(0.3)}
             className="p-10 rounded-xl bg-dark w-full h-full"
