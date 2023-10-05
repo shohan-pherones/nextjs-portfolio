@@ -21,7 +21,7 @@ export const data = {
     "React Hook Form",
   ],
   backend: [
-    " NodeJS",
+    "NodeJS",
     "ExpressJS",
     "MongoDB",
     "PostgreSQL",
