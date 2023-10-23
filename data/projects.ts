@@ -1,6 +1,19 @@
 export const data = [
   {
     id: 1,
+    title: "Spectra Chat",
+    image:
+      "https://res.cloudinary.com/dpkbthpcw/image/upload/v1698083080/nextjs-portfolio/assets/projects/spectra-chat_zboa5k.png",
+    description:
+      "Spectra Chat is a real-time messaging application that allows users to communicate with others in real-time. It offers various features, including chat, profile updates, group chat creation, chat deletion, and photo sharing. Users can sign in using their Google, GitHub, or email and password credentials.",
+    tech: "NextJS, Prisma, Tailwind CSS, Axios, Cloudinary, Pusher, Zustand, TypeScript",
+    live: "https://spectra-chat.vercel.app",
+    front: "",
+    back: "",
+    full: "https://github.com/shohan-pherones/spectra-chat",
+  },
+  {
+    id: 2,
     title: "Elysian Feeds",
     image:
       "https://res.cloudinary.com/dpkbthpcw/image/upload/v1689498588/nextjs-portfolio/assets/projects/elysian-feeds_ljr6oe.jpg",
@@ -13,7 +26,7 @@ export const data = [
     full: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Euphoria",
     image:
       "https://res.cloudinary.com/dpkbthpcw/image/upload/v1689498588/nextjs-portfolio/assets/projects/euphoria_nsmun2.jpg",
@@ -26,7 +39,7 @@ export const data = [
     full: "https://github.com/shohan-pherones/euphoria-ecommerce",
   },
   {
-    id: 3,
+    id: 4,
     title: "Raptor Media",
     image:
       "https://res.cloudinary.com/dpkbthpcw/image/upload/v1689498588/nextjs-portfolio/assets/projects/raptor-media_gyxm3o.jpg",
@@ -39,7 +52,7 @@ export const data = [
     full: "https://github.com/shohan-pherones/raptor-media",
   },
   {
-    id: 4,
+    id: 5,
     title: "Orbit Council",
     image:
       "https://res.cloudinary.com/dpkbthpcw/image/upload/v1689498588/nextjs-portfolio/assets/projects/orbit-council_h1ekel.jpg",
@@ -52,7 +65,7 @@ export const data = [
     full: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Torque Xtreme",
     image:
       "https://res.cloudinary.com/dpkbthpcw/image/upload/v1689498588/nextjs-portfolio/assets/projects/torque-xtreme_ecnhnt.jpg",
@@ -64,7 +77,7 @@ export const data = [
     full: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Immemorial",
     image:
       "https://res.cloudinary.com/dpkbthpcw/image/upload/v1689498588/nextjs-portfolio/assets/projects/immemorial_n3psgl.jpg",

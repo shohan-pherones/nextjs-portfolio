@@ -19,6 +19,8 @@ export const data = {
     "GSAP",
     "Framer Motion",
     "React Hook Form",
+    "Pusher",
+    "Zustand",
   ],
   backend: [
     "NodeJS",
