@@ -1,16 +1,16 @@
-import { cva, VariantProps } from "class-variance-authority";
-import Link from "next/link";
-import clsx from "clsx";
+import { cva, VariantProps } from 'class-variance-authority';
+import clsx from 'clsx';
+import Link from 'next/link';
 
-const buttonVariants = cva("px-5 py-3 rounded-lg duration-300 inline-block", {
+const buttonVariants = cva('px-5 py-3 rounded-lg duration-300 inline-block', {
   variants: {
     color: {
-      dark: "bg-dark text-light hover:bg-dark/80",
-      light: "bg-light text-dark hover:bg-light/20 hover:text-light",
+      dark: 'bg-dark text-light hover:bg-dark/80',
+      light: 'bg-light text-dark hover:bg-light/20 hover:text-light',
     },
   },
   defaultVariants: {
-    color: "dark",
+    color: 'dark',
   },
 });
 

@@ -1,4 +1,4 @@
-import { cubicBezier } from "framer-motion";
+import { cubicBezier } from 'framer-motion';
 
 export const getTransition = (
   delay: number = 0,

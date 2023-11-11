@@ -20,6 +20,7 @@
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "framer-motion": "^10.12.21",
+    "gsap": "^3.12.2",
     "lucide-react": "^0.292.0",
     "next": "13.4.9",
     "postcss": "8.4.25",
@@ -29,5 +30,10 @@
     "react-icons": "^4.10.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.7"
   }
 }

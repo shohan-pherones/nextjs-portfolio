@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { getTransition } from "@/utils/getTransition";
-import { useMediaQuery } from "@mantine/hooks";
-import Image from "next/image";
-import Link from "next/link";
-import Button from "./Button";
+import { getTransition } from '@/utils/getTransition';
+import { useMediaQuery } from '@mantine/hooks';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import Button from './Button';
 
 interface BlogCardProps {
   index: number;
@@ -28,46 +28,46 @@ const BlogCard: React.FC<BlogCardProps> = ({
   body,
   blogUrl,
 }) => {
-  const mobile = useMediaQuery("(max-width: 640px)");
+  const mobile = useMediaQuery('(max-width: 640px)');
 
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className='h-full w-full overflow-hidden'>
       <motion.article
-        initial={{ y: "-100%" }}
+        initial={{ y: '-100%' }}
         whileInView={{ y: 0 }}
         transition={getTransition(index / 10)}
-        className="w-full h-full bg-light overflow-hidden rounded-xl border border-dark/10"
+        className='h-full w-full overflow-hidden rounded-xl border border-dark/10 bg-light'
       >
-        <div className="w-full h-[10rem] sm:h-[15rem] overflow-hidden">
+        <div className='h-[10rem] w-full overflow-hidden sm:h-[15rem]'>
           <Image
             src={image}
             alt={title}
             width={500}
             height={300}
             priority
-            className="w-full h-full object-cover"
+            className='h-full w-full object-cover'
           />
         </div>
-        <div className="p-5 flex flex-col gap-3 items-start">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <div className="flex justify-between w-full text-dark/50">
+        <div className='flex flex-col items-start gap-3 p-5'>
+          <h3 className='text-2xl font-semibold'>{title}</h3>
+          <div className='flex w-full justify-between text-dark/50'>
             <p>
-              by{" "}
+              by{' '}
               <Link
                 href={authorUrl}
-                target="_blank"
-                className="text-dark link-item-dark"
+                target='_blank'
+                className='link-item-dark text-dark'
               >
                 {author}
               </Link>
             </p>
-            <p className="text-dark">{publishedDate}</p>
+            <p className='text-dark'>{publishedDate}</p>
           </div>
           <p>
             {mobile ? body.substring(0, 200) : body}
-            {mobile ? "..." : null}
+            {mobile ? '...' : null}
           </p>
-          <Button href={blogUrl} target="_blank">
+          <Button href={blogUrl} target='_blank'>
             Read Full Article
           </Button>
         </div>

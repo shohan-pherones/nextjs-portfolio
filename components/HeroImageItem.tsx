@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 interface HeroImageItemProps {
   image: string;
@@ -6,14 +6,14 @@ interface HeroImageItemProps {
 
 const HeroImageItem: React.FC<HeroImageItemProps> = ({ image }) => {
   return (
-    <div className="w-full h-full overflow-hidden group z-[3]">
+    <div className='group z-[3] h-full w-full overflow-hidden'>
       <Image
         src={image}
-        alt="Hero Image"
+        alt='Hero Image'
         width={300}
         height={200}
         priority
-        className="w-full h-full object-cover duration-300 invisible group-hover:visible"
+        className='invisible h-full w-full object-cover duration-300 group-hover:visible'
       />
     </div>
   );

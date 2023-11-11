@@ -1,18 +1,18 @@
-import { data } from "@/data/projects";
-import SectionTitle from "./SectionTitle";
-import ProjectCard from "./ProjectCard";
+import { data } from '@/data/projects';
+import ProjectCard from './ProjectCard';
+import SectionTitle from './SectionTitle';
 
 const Projects = () => {
   return (
-    <section id="projects" className="section-padding">
-      <div className="wrapper">
+    <section id='projects' className='section-padding'>
+      <div className='wrapper'>
         <SectionTitle
-          title="Selected Works (2022 - 2023)"
-          subtitle="Projects"
+          title='Selected Works (2022 - 2023)'
+          subtitle='Projects'
         />
       </div>
 
-      <div className="flex flex-col">
+      <div className='flex flex-col'>
         {data.map((project: any, index: number) => (
           <ProjectCard
             key={project.id}
