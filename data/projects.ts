@@ -11,6 +11,8 @@ export const data = [
     front: "",
     back: "",
     full: "https://github.com/shohan-pherones/spectra-chat",
+    duration: "Nov 10, 2023 - Nov 25, 2023",
+    color: "#2b2cd4",
   },
   {
     id: 2,
@@ -24,6 +26,8 @@ export const data = [
     front: "https://github.com/shohan-pherones/elysian-feeds-client",
     back: "https://github.com/shohan-pherones/elysian-feeds-server",
     full: "",
+    duration: "Nov 10, 2023 - Nov 25, 2023",
+    color: "#2b2cd4",
   },
   {
     id: 3,
@@ -37,6 +41,8 @@ export const data = [
     front: "",
     back: "",
     full: "https://github.com/shohan-pherones/euphoria-ecommerce",
+    duration: "Nov 10, 2023 - Nov 25, 2023",
+    color: "#2b2cd4",
   },
   {
     id: 4,
@@ -50,6 +56,8 @@ export const data = [
     front: "",
     back: "",
     full: "https://github.com/shohan-pherones/raptor-media",
+    duration: "Nov 10, 2023 - Nov 25, 2023",
+    color: "#2b2cd4",
   },
   {
     id: 5,
@@ -63,6 +71,8 @@ export const data = [
     front: "https://github.com/shohan-pherones/orbit-council-client",
     back: "https://github.com/shohan-pherones/orbit-council-server",
     full: "",
+    duration: "Nov 10, 2023 - Nov 25, 2023",
+    color: "#2b2cd4",
   },
   {
     id: 6,
@@ -75,6 +85,8 @@ export const data = [
     front: "https://github.com/shohan-pherones/torque-xtreme",
     back: "https://github.com/shohan-pherones/torque-xtreme-server",
     full: "",
+    duration: "Nov 10, 2023 - Nov 25, 2023",
+    color: "#2b2cd4",
   },
   {
     id: 7,
@@ -88,5 +100,7 @@ export const data = [
     front: "https://github.com/shohan-pherones/immemorial",
     back: "",
     full: "",
+    duration: "Nov 10, 2023 - Nov 25, 2023",
+    color: "#2b2cd4",
   },
 ];
