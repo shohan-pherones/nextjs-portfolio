@@ -1,10 +1,11 @@
-"use client";
+'use client';
 
-import clsx from "clsx";
-import gsap from "gsap";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useRef } from "react";
+import clsx from 'clsx';
+import gsap from 'gsap';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useEffect, useRef } from 'react';
 
 interface ProjectCardProps {
   index: number;
@@ -35,6 +36,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   duration,
   color,
 }) => {
+  const router = useRouter();
+
   const parentRef = useRef<HTMLDivElement | null>(null);
   const childRef = useRef<HTMLDivElement | null>(null);
 
@@ -51,9 +54,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     gsap.set(child, { x: initialX, scale: 0, rotate: 10 });
 
-    const travelWidth = rect.width * 0.6;
+    const travelWidth = rect.width * 0.5;
     const centerX = rect.left + rect.width / 2;
-    const minX = centerX - travelWidth / 1.5;
+    const minX = centerX - travelWidth / 1.125;
     const maxX = minX + travelWidth;
 
     let lastTime = performance.now();
@@ -65,11 +68,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     const onMouseEnter = () => {
       // Animate on mouse enter with a delay
       gsap.to(child, {
-        duration: 0.5,
+        duration: 0.75,
         x: initialX,
         scale: 1,
         rotate: -10,
-        ease: "power2.out",
+        ease: 'back.out',
         delay: movementDelay,
       });
     };
@@ -77,11 +80,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     const onMouseLeave = () => {
       // Animate on mouse leave with a delay
       gsap.to(child, {
-        duration: 0.5,
+        duration: 0.75,
         x: initialX,
         scale: 0,
         rotate: 10,
-        ease: "power2.out",
+        ease: 'back.out',
         delay: movementDelay,
       });
     };
@@ -101,30 +104,34 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       gsap.to(child, {
         duration: 0.5,
         x: newX,
-        ease: "power2.out",
+        ease: 'power2.out',
         delay: movementDelay,
       });
 
       lastTime = currentTime;
     };
 
-    parent.addEventListener("mouseenter", onMouseEnter);
-    parent.addEventListener("mouseleave", onMouseLeave);
-    parent.addEventListener("mousemove", onMouseMove);
+    parent.addEventListener('mouseenter', onMouseEnter);
+    parent.addEventListener('mouseleave', onMouseLeave);
+    parent.addEventListener('mousemove', onMouseMove);
 
     return () => {
-      parent.removeEventListener("mouseenter", onMouseEnter);
-      parent.removeEventListener("mouseleave", onMouseLeave);
-      parent.removeEventListener("mousemove", onMouseMove);
+      parent.removeEventListener('mouseenter', onMouseEnter);
+      parent.removeEventListener('mouseleave', onMouseLeave);
+      parent.removeEventListener('mousemove', onMouseMove);
     };
   }, []);
 
   return (
-    <div className="w-full h-40 group relative" ref={parentRef}>
+    <div
+      onClick={() => router.push(`/projects/${id}`)}
+      className='group relative h-20 w-full cursor-pointer sm:h-40'
+      ref={parentRef}
+    >
       {/* IMAGE */}
       <div
         ref={childRef}
-        className="absolute top-1/2 -translate-y-1/2 h-[25rem] w-[30rem] z-[1] pointer-events-none overflow-hidden p-10"
+        className='pointer-events-none absolute top-1/2 z-[1] h-[7.5rem] w-[10rem] -translate-y-1/2 overflow-hidden p-5 md:h-[10rem] md:w-[15rem] lg:h-[15rem] lg:w-[20rem] xl:h-[20rem] xl:w-[25rem] xl:p-10 2xl:h-[25rem] 2xl:w-[30rem]'
         style={{ backgroundColor: color }}
       >
         <Image
@@ -133,66 +140,55 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           width={640}
           height={640}
           priority
-          className="w-full h-full object-cover"
+          className='h-full w-full object-cover'
         />
       </div>
 
       {/* SHUTTER */}
-      <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-0 bg-alt z-[-1] group-hover:h-full duration-500 rotate-180"></div>
+      <div className='absolute bottom-0 left-0 right-0 top-0 z-[-1] h-0 w-full rotate-180 bg-alt duration-500 group-hover:h-full' />
 
-      {/* LINK */}
-      <Link
-        href={`/projects/${id}`}
+      {/* CONTENTS */}
+      <div
         className={clsx(
-          "w-full h-full border-b border-alt grid grid-cols-[10rem_auto_20rem] gap-10",
-          index === 0 && "border-t"
+          'grid h-full w-full grid-cols-1 gap-10 border-b border-alt sm:grid-cols-[auto_15rem] lg:grid-cols-[5rem_auto_20rem] xl:grid-cols-[10rem_auto_20rem]',
+          index === 0 && 'border-t'
         )}
       >
-        {/* NUMBER */}
-        <div className="w-full h-full flex items-center justify-center border-r border-alt">
-          <span>{(index + 1).toString().padStart(2, "0")}.</span>
+        <div className='hidden h-full w-full items-center justify-center border-r border-alt lg:flex'>
+          <span>{(index + 1).toString().padStart(2, '0')}.</span>
         </div>
 
-        {/* TITLE */}
-        <div className="w-full h-full flex items-center">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold uppercase whitespace-nowrap">
+        <div className='flex h-full w-full items-center pl-5 lg:pl-0'>
+          <h2 className='whitespace-nowrap text-4xl font-semibold uppercase md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl'>
             {title}
           </h2>
         </div>
 
-        {/* CONTENTS */}
-        <div className="w-full h-full flex flex-col justify-center gap-2.5 border-l border-alt pl-5">
+        <div className='hidden h-full w-full flex-col justify-center gap-2.5 border-l border-alt pl-5 sm:flex'>
           <p>{duration}</p>
-          <ul className="flex gap-5 items-center flex-wrap">
-            <li>
-              <Link href={live} className="link-item-dark">
-                Live Link
-              </Link>
-            </li>
+
+          <div className='flex flex-wrap items-center gap-5'>
+            <Link href={live} className='link-item-dark'>
+              Live Link
+            </Link>
             {front && (
-              <li>
-                <Link href={front} className="link-item-dark">
-                  Front-End
-                </Link>
-              </li>
+              <Link href={front} className='link-item-dark'>
+                Front-End
+              </Link>
             )}
             {back && (
-              <li>
-                <Link href={back} className="link-item-dark">
-                  Back-End
-                </Link>
-              </li>
+              <Link href={back} className='link-item-dark'>
+                Back-End
+              </Link>
             )}
             {full && (
-              <li>
-                <Link href={full} className="link-item-dark">
-                  Full-Stack
-                </Link>
-              </li>
+              <Link href={full} className='link-item-dark'>
+                Full-Stack
+              </Link>
             )}
-          </ul>
+          </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };
