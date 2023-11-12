@@ -1,5 +1,9 @@
+'use client';
+
 import { data } from '@/data/projects';
+import { getTransition } from '@/utils/getTransition';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { buttonVariants } from './Button';
@@ -30,8 +34,13 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
         <SectionTitle title={project.title} subtitle='Project Details' />
       </div>
 
-      <div className='wrapper flex flex-col gap-10 pb-10 md:pb-20'>
-        <div className='h-full w-full'>
+      <div className='wrapper flex flex-col gap-10 overflow-hidden pb-10 md:pb-20'>
+        <motion.div
+          initial={{ y: '-100%' }}
+          whileInView={{ y: 0 }}
+          transition={getTransition(1.4)}
+          className='h-full w-full'
+        >
           <Image
             src={project.image}
             alt={project.title}
@@ -40,49 +49,79 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
             priority
             className='h-full w-full object-cover'
           />
-        </div>
+        </motion.div>
 
         <div className='flex flex-col gap-5'>
-          <p className='sm:self-end'>{project.duration}</p>
-          <p className='sm:text-xl md:text-2xl'>{project.description}</p>
-          <p className='sm:text-xl md:text-2xl'>
-            <span className='font-semibold'>Technologies:</span> {project.tech}
-          </p>
-          <div className='flex flex-wrap items-center gap-5'>
-            <Link
-              href={project.live}
-              target='_blank'
-              className={clsx(buttonVariants())}
+          <div className='overflow-hidden sm:self-end'>
+            <motion.p
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
             >
-              Live Link
-            </Link>
-            {project?.front && (
+              {project.duration}
+            </motion.p>
+          </div>
+          <div className='overflow-hidden sm:text-xl md:text-2xl'>
+            <motion.p
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+            >
+              {project.description}
+            </motion.p>
+          </div>
+          <div className='overflow-hidden sm:text-xl md:text-2xl'>
+            <motion.p
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+            >
+              <span className='font-semibold'>Technologies:</span>{' '}
+              {project.tech}
+            </motion.p>
+          </div>
+          <div className='overflow-hidden'>
+            <motion.div
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+              className='flex flex-wrap items-center gap-5'
+            >
               <Link
-                href={project.front}
+                href={project.live}
                 target='_blank'
                 className={clsx(buttonVariants())}
               >
-                Front-End
+                Live Link
               </Link>
-            )}
-            {project?.back && (
-              <Link
-                href={project.back}
-                target='_blank'
-                className={clsx(buttonVariants())}
-              >
-                Back-End
-              </Link>
-            )}
-            {project?.full && (
-              <Link
-                href={project.full}
-                target='_blank'
-                className={clsx(buttonVariants())}
-              >
-                Full-Stack
-              </Link>
-            )}
+              {project?.front && (
+                <Link
+                  href={project.front}
+                  target='_blank'
+                  className={clsx(buttonVariants())}
+                >
+                  Front-End
+                </Link>
+              )}
+              {project?.back && (
+                <Link
+                  href={project.back}
+                  target='_blank'
+                  className={clsx(buttonVariants())}
+                >
+                  Back-End
+                </Link>
+              )}
+              {project?.full && (
+                <Link
+                  href={project.full}
+                  target='_blank'
+                  className={clsx(buttonVariants())}
+                >
+                  Full-Stack
+                </Link>
+              )}
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 'use client';
 
+import { getTransition } from '@/utils/getTransition';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -151,40 +153,71 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
       >
         <div className='hidden h-full w-full items-center justify-center border-r border-alt lg:flex'>
-          <span>{(index + 1).toString().padStart(2, '0')}.</span>
+          <div className='overflow-hidden'>
+            <motion.span
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+              className='inline-block'
+            >
+              {(index + 1).toString().padStart(2, '0')}.
+            </motion.span>
+          </div>
         </div>
 
         <div
           onClick={() => router.push(`/projects/${id}`)}
           className='flex h-full w-full cursor-pointer items-center pl-5 lg:pl-0'
         >
-          <h2 className='whitespace-nowrap text-4xl font-semibold uppercase md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl'>
-            {title}
-          </h2>
+          <div className='overflow-hidden'>
+            <motion.h2
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+              className='whitespace-nowrap text-4xl font-semibold uppercase md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl'
+            >
+              {title}
+            </motion.h2>
+          </div>
         </div>
 
-        <div className='hidden h-full w-full flex-col justify-center gap-2.5 border-l border-alt pl-5 sm:flex'>
-          <p>{duration}</p>
+        <div className='hidden h-full w-full flex-col justify-center gap-1.5 border-l border-alt pl-5 sm:flex'>
+          <div className='overflow-hidden'>
+            <motion.p
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+            >
+              {duration}
+            </motion.p>
+          </div>
 
-          <div className='flex flex-wrap items-center gap-5'>
-            <Link href={live} target='_blank' className='link-item-dark'>
-              Live Link
-            </Link>
-            {front && (
-              <Link href={front} target='_blank' className='link-item-dark'>
-                Front-End
+          <div className='overflow-hidden'>
+            <motion.div
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition()}
+              className='flex flex-wrap items-center gap-x-5 gap-y-1.5'
+            >
+              <Link href={live} target='_blank' className='link-item-dark'>
+                Live Link
               </Link>
-            )}
-            {back && (
-              <Link href={back} target='_blank' className='link-item-dark'>
-                Back-End
-              </Link>
-            )}
-            {full && (
-              <Link href={full} target='_blank' className='link-item-dark'>
-                Full-Stack
-              </Link>
-            )}
+              {front && (
+                <Link href={front} target='_blank' className='link-item-dark'>
+                  Front-End
+                </Link>
+              )}
+              {back && (
+                <Link href={back} target='_blank' className='link-item-dark'>
+                  Back-End
+                </Link>
+              )}
+              {full && (
+                <Link href={full} target='_blank' className='link-item-dark'>
+                  Full-Stack
+                </Link>
+              )}
+            </motion.div>
           </div>
         </div>
       </div>

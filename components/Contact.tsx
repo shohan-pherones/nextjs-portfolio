@@ -31,7 +31,7 @@ const Contact = () => {
               <h3 className='text-2xl font-semibold text-dark/50'>
                 Social Media
               </h3>
-              <div className='flex flex-wrap gap-2 sm:gap-5'>
+              <div className='flex flex-wrap gap-x-5 gap-y-1.5'>
                 <Link
                   href='https://github.com/shohan-pherones'
                   target='_blank'
