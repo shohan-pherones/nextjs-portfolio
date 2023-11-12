@@ -2,17 +2,20 @@ import { cva, VariantProps } from 'class-variance-authority';
 import clsx from 'clsx';
 import Link from 'next/link';
 
-const buttonVariants = cva('px-5 py-3 rounded-lg duration-300 inline-block', {
-  variants: {
-    color: {
-      dark: 'bg-dark text-light hover:bg-dark/80',
-      light: 'bg-light text-dark hover:bg-light/20 hover:text-light',
+export const buttonVariants = cva(
+  'px-5 py-3 rounded-lg duration-300 inline-block whitespace-nowrap',
+  {
+    variants: {
+      color: {
+        dark: 'bg-dark text-light hover:bg-dark/80',
+        light: 'bg-light text-dark hover:bg-light/20 hover:text-light',
+      },
     },
-  },
-  defaultVariants: {
-    color: 'dark',
-  },
-});
+    defaultVariants: {
+      color: 'dark',
+    },
+  }
+);
 
 interface ButtonProps extends VariantProps<typeof buttonVariants> {
   href: string;

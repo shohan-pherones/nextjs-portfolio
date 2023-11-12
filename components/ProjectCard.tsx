@@ -9,7 +9,7 @@ import { useEffect, useRef } from 'react';
 
 interface ProjectCardProps {
   index: number;
-  id: string;
+  id: number;
   title: string;
   image: string;
   live: string;
