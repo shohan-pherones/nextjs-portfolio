@@ -18,17 +18,17 @@ const Footer = () => {
           <Link
             href='https://www.adobe.com/products/photoshop.html'
             target='_blank'
-            className='link-item-dark text-dark'
+            className='link-item-dark whitespace-nowrap text-dark'
           >
-            Adobe_Photoshop
+            Adobe Photoshop
           </Link>{' '}
           and coded in{' '}
           <Link
             href='https://code.visualstudio.com'
             target='_blank'
-            className='link-item-dark text-dark'
+            className='link-item-dark whitespace-nowrap text-dark'
           >
-            Visual_Studio_Code
+            Visual Studio Code
           </Link>{' '}
           by yours truly. Built with{' '}
           <Link
@@ -42,9 +42,9 @@ const Footer = () => {
           <Link
             href='https://tailwindcss.com'
             target='_blank'
-            className='link-item-dark text-dark'
+            className='link-item-dark whitespace-nowrap text-dark'
           >
-            Tailwind_CSS
+            Tailwind CSS
           </Link>
           , deployed with{' '}
           <Link
@@ -58,9 +58,9 @@ const Footer = () => {
           <Link
             href='https://fonts.google.com/specimen/Bai+Jamjuree'
             target='_blank'
-            className='link-item-dark text-dark'
+            className='link-item-dark whitespace-nowrap text-dark'
           >
-            Bai_Jamjuree
+            Bai Jamjuree
           </Link>{' '}
           typeface.
         </motion.p>

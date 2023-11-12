@@ -1,7 +1,6 @@
 'use client';
 
 import { getTransition } from '@/utils/getTransition';
-import { useMediaQuery } from '@mantine/hooks';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -28,8 +27,6 @@ const BlogCard: React.FC<BlogCardProps> = ({
   body,
   blogUrl,
 }) => {
-  const mobile = useMediaQuery('(max-width: 640px)');
-
   return (
     <div className='h-full w-full overflow-hidden'>
       <motion.article
@@ -49,8 +46,10 @@ const BlogCard: React.FC<BlogCardProps> = ({
           />
         </div>
         <div className='flex flex-col items-start gap-3 p-5'>
-          <h3 className='text-2xl font-semibold'>{title}</h3>
-          <div className='flex w-full justify-between text-dark/50'>
+          <h3 className='text-2xl font-semibold'>
+            {title.substring(0, 60)}...
+          </h3>
+          <div className='flex w-full flex-col justify-between gap-y-1.5 text-dark/50 sm:flex-row sm:gap-y-0'>
             <p>
               by{' '}
               <Link
@@ -63,10 +62,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
             </p>
             <p className='text-dark'>{publishedDate}</p>
           </div>
-          <p>
-            {mobile ? body.substring(0, 200) : body}
-            {mobile ? '...' : null}
-          </p>
+          <p>{body.substring(0, 200)}...</p>
           <Button href={blogUrl} target='_blank'>
             Read Full Article
           </Button>

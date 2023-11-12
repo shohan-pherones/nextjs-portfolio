@@ -7,7 +7,7 @@ const Blogs = () => {
     <section id='blogs' className='wrapper section-padding'>
       <SectionTitle title='Timeworthy Articles' subtitle='Blogs' />
 
-      <div className='grid gap-10 lg:grid-cols-2 2xl:grid-cols-3'>
+      <div className='grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3'>
         {data.map((blog: any, index: number) => (
           <BlogCard
             key={blog.id}
