@@ -123,11 +123,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   }, []);
 
   return (
-    <div
-      onClick={() => router.push(`/projects/${id}`)}
-      className='group relative h-20 w-full cursor-pointer sm:h-40'
-      ref={parentRef}
-    >
+    <div className='group relative h-20 w-full sm:h-40' ref={parentRef}>
       {/* IMAGE */}
       <div
         ref={childRef}
@@ -158,7 +154,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <span>{(index + 1).toString().padStart(2, '0')}.</span>
         </div>
 
-        <div className='flex h-full w-full items-center pl-5 lg:pl-0'>
+        <div
+          onClick={() => router.push(`/projects/${id}`)}
+          className='flex h-full w-full cursor-pointer items-center pl-5 lg:pl-0'
+        >
           <h2 className='whitespace-nowrap text-4xl font-semibold uppercase md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl'>
             {title}
           </h2>
@@ -168,21 +167,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <p>{duration}</p>
 
           <div className='flex flex-wrap items-center gap-5'>
-            <Link href={live} className='link-item-dark'>
+            <Link href={live} target='_blank' className='link-item-dark'>
               Live Link
             </Link>
             {front && (
-              <Link href={front} className='link-item-dark'>
+              <Link href={front} target='_blank' className='link-item-dark'>
                 Front-End
               </Link>
             )}
             {back && (
-              <Link href={back} className='link-item-dark'>
+              <Link href={back} target='_blank' className='link-item-dark'>
                 Back-End
               </Link>
             )}
             {full && (
-              <Link href={full} className='link-item-dark'>
+              <Link href={full} target='_blank' className='link-item-dark'>
                 Full-Stack
               </Link>
             )}
