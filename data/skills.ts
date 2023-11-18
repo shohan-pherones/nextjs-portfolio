@@ -17,6 +17,7 @@ import {
   SiGreensock,
   SiMongoose,
   SiPrisma,
+  SiDocker,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -91,6 +92,10 @@ export const data = {
     {
       name: 'Git',
       icon: BsGit,
+    },
+    {
+      name: 'Docker',
+      icon: SiDocker,
     },
   ],
 };
