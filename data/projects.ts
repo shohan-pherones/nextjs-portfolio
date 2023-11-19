@@ -21,7 +21,7 @@ export const data = [
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1699774101/nextjs-portfolio/assets/projects/elysian-feeds_kb5iql.png',
     description:
       "Elysian Feeds is a charitable initiative website that empowers users to contribute resources or consume them, fostering collaboration and empowerment. Built with technologies like NextJS, ReactJS, and Redux Toolkit, the platform ensures a seamless user experience. The admin manages user roles, tracks contributions and consumption patterns, and analyzes the platform's impact using ExpressJS, MongoDB, and other tools. Elysian Feeds utilizes Tailwind CSS, Recharts, and Framer Motion for visually appealing designs and dynamic visualizations. Join Elysian Feeds to actively participate in making a positive impact and creating a more sustainable future.",
-    tech: 'Next.js, React.js, TypeScript, Node.js, Express.js, Mongoose, MongoDB, Redux Toolkit, Axios, SWR, Tailwind CSS, Recharts, Framer Motion',
+    tech: 'Next.js, React.js, TypeScript, Node.js, Express.js, Mongoose, MongoDB, Redux Toolkit, Axios, SWR, Tailwind CSS, Recharts, Framer Motion, Docker',
     live: 'https://elysian-feeds.vercel.app',
     front: 'https://github.com/shohan-pherones/elysian-feeds-client',
     back: 'https://github.com/shohan-pherones/elysian-feeds-server',
