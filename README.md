@@ -50,4 +50,4 @@ To set up the portfolio on your local environment, follow these steps:
 
 ## Conclusion
 
-Thank you for exploring my portfolio! I hope this collection of my work and the technologies used provide a glimpse into my passion for creating innovative and user-centric web experiences. If you have any inquiries or opportunities, feel free to reach out through the provided contact form. Happy exploring!
+Thank you for exploring my portfolio! I hope this collection of my work and the technologies used provide a glimpse into my passion for creating innovative and user-centric web experiences. If you have any inquiries or opportunities, feel free to reach out through the provided contact form.
