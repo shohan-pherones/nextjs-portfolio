@@ -18,6 +18,7 @@ import {
   SiMongoose,
   SiPrisma,
   SiDocker,
+  SiNginx,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -96,6 +97,10 @@ export const data = {
     {
       name: 'Docker',
       icon: SiDocker,
+    },
+    {
+      name: 'NGINX',
+      icon: SiNginx,
     },
   ],
 };
