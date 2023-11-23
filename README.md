@@ -1,4 +1,4 @@
-# Portfolio Website Built with Next.js and TypeScript
+# Portfolio Website Built with Next.js, TypeScript, GSAP and Framer Motion
 
 Welcome to my portfolio website! I'm excited to present to you a showcase of my work and achievements, demonstrating my skills as a web developer. This website is crafted with the latest technologies, including React, TypeScript, Next.js, Tailwind CSS, and GSAP for seamless animations. It reflects not only my technical proficiency but also my commitment to creating modern and user-friendly experiences.
 
