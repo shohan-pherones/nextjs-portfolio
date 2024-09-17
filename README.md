@@ -41,12 +41,12 @@ My portfolio leverages a robust technology stack, featuring:
 To set up the portfolio on your local environment, follow these steps:
 
 1. Clone the repository using `git clone https://github.com/shohan-pherones/nextjs-portfolio`
-2. Install required dependencies with `npm install` or `npm i`.
+2. Install required dependencies with `yarn`.
 3. Create a `.env` file in the root directory and add the following variables:
    - `NEXT_PUBLIC_EMAILJS_SERVICE_ID`
    - `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`
    - `NEXT_PUBLIC_EMAILJS_PUBLIC_ID`
-4. Start the application by running `npm run dev`.
+4. Start the application by running `yarn dev`.
 
 ## Conclusion
 
