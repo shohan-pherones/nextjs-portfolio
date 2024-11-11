@@ -75,12 +75,11 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition()}
             >
-              Hi there, I am Md. Shohanur Rahman and I am a passionate
-              full-stack web developer with a strong focus on MERN (MongoDB,
-              Express.js, React.js, Node.js) stack. I have been working on
-              various projects leveraging my favorite technologies such as
-              Next.js, React.js, TypeScript, Node.js, Express.js, and Tailwind
-              CSS.
+              Hi there! I am Md. Shohanur Rahman, a passionate full-stack web
+              developer with a strong focus on the MERN (MongoDB, Express.js,
+              React.js, Node.js) stack. Additionally, I am proficient in Python,
+              Django, and Django REST Framework, which further expands my
+              versatility as a developer.
             </motion.p>
           </div>
           <div className='hidden overflow-hidden sm:block'>
@@ -89,10 +88,10 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition(0.2)}
             >
-              My journey into web development began in February 2022, but my
-              passion for programming started during my first year at
-              university. I have a deep love for JavaScript and I constantly
-              immerse myself in learning and exploring its intricacies.
+              My journey into web development began in February 2022, though my
+              love for programming started in my first year at university. I
+              have a deep passion for JavaScript and continuously explore its
+              intricacies, allowing me to stay ahead in this dynamic field.
             </motion.p>
           </div>
           <div className='hidden overflow-hidden sm:block'>
@@ -101,11 +100,11 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition(0.4)}
             >
-              Throughout my development career, I have honed my skills by
-              actively solving coding challenges on platforms like LeetCode. I
-              have also achieved certifications from HackerRank, freeCodeCamp,
-              and other reputable sources, further validating my expertise in
-              the field.
+              Throughout my career, I have refined my skills through active
+              coding on platforms like LeetCode and obtained certifications from
+              reputable sources like HackerRank and freeCodeCamp. My expertise
+              is further validated by these accomplishments and ongoing
+              practice.
             </motion.p>
           </div>
           <div className='overflow-hidden'>
@@ -114,12 +113,36 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition(0.6)}
             >
-              Overall, I am a driven and enthusiastic web developer who
-              constantly seeks opportunities to grow and create innovative
-              solutions. With a strong foundation in MERN stack development, a
-              passion for JavaScript, and a dedication to delivering
-              high-quality results, I am eager to contribute my skills to
-              impactful projects and collaborate with like-minded professionals.
+              Driven by a love for teaching, I also run an online course on MERN
+              stack development, where I foster essential skills such as
+              leadership, teamwork, and public speaking. This experience has
+              enabled me to empower others while enhancing my own understanding
+              of complex concepts.
+            </motion.p>
+          </div>
+          <div className='overflow-hidden'>
+            <motion.p
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition(0.6)}
+            >
+              Creativity is integral to my approach; I have a keen eye for
+              design and a knack for crafting captivating animations. I ensure
+              every detail contributes to a visually appealing, engaging user
+              experience.
+            </motion.p>
+          </div>
+          <div className='overflow-hidden'>
+            <motion.p
+              initial={{ y: '100%' }}
+              whileInView={{ y: 0 }}
+              transition={getTransition(0.6)}
+            >
+              With a strong foundation in both the MERN stack and Django
+              ecosystem, a passion for JavaScript, and a commitment to
+              high-quality results, I am excited to bring innovative solutions
+              to impactful projects and collaborate with like-minded
+              professionals.
             </motion.p>
           </div>
           <div className='overflow-hidden'>

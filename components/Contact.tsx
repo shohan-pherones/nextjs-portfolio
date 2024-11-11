@@ -40,13 +40,6 @@ const Contact = () => {
                   GitHub
                 </Link>
                 <Link
-                  href='https://leetcode.com/spectrashohan'
-                  target='_blank'
-                  className='link-item-dark'
-                >
-                  LeetCode
-                </Link>
-                <Link
                   href='https://www.linkedin.com/in/shohan-pherones'
                   target='_blank'
                   className='link-item-dark'
@@ -54,18 +47,25 @@ const Contact = () => {
                   LinkedIn
                 </Link>
                 <Link
+                  href='https://leetcode.com/spectrashohan'
+                  target='_blank'
+                  className='link-item-dark'
+                >
+                  LeetCode
+                </Link>
+                <Link
+                  href='https://www.hackerrank.com/profile/shohan_sub_56'
+                  target='_blank'
+                  className='link-item-dark'
+                >
+                  HackerRank
+                </Link>
+                <Link
                   href='https://twitter.com/elysianshohan'
                   target='_blank'
                   className='link-item-dark'
                 >
                   Twitter
-                </Link>
-                <Link
-                  href='https://www.facebook.com/spectra.shohan'
-                  target='_blank'
-                  className='link-item-dark'
-                >
-                  Facebook
                 </Link>
               </div>
             </motion.div>
@@ -101,7 +101,7 @@ const Contact = () => {
                   target='_blank'
                   className='link-item-dark'
                 >
-                  Sirajganj, Bangladesh
+                  Sirajganj, Rajshahi, Bangladesh
                 </Link>
               </motion.div>
             </div>

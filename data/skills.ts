@@ -19,30 +19,26 @@ import {
   SiPrisma,
   SiDocker,
   SiNginx,
+  SiPython,
+  SiDjango,
+  SiMysql,
+  SiLinux,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
 export const data = {
   frontend: [
     {
-      name: 'HTML',
-      icon: AiFillHtml5,
-    },
-    {
-      name: 'CSS',
-      icon: BiLogoCss3,
-    },
-    {
-      name: 'Tailwind CSS',
-      icon: BiLogoTailwindCss,
+      name: 'TypeScript',
+      icon: BiLogoTypescript,
     },
     {
       name: 'JavaScript',
       icon: BiLogoJavascript,
     },
     {
-      name: 'TypeScript',
-      icon: BiLogoTypescript,
+      name: 'Next.js',
+      icon: TbBrandNextjs,
     },
     {
       name: 'React.js',
@@ -53,8 +49,8 @@ export const data = {
       icon: BiLogoRedux,
     },
     {
-      name: 'Next.js',
-      icon: TbBrandNextjs,
+      name: 'Tailwind CSS',
+      icon: BiLogoTailwindCss,
     },
     {
       name: 'GSAP',
@@ -64,8 +60,24 @@ export const data = {
       name: 'Framer Motion',
       icon: SiFramer,
     },
+    {
+      name: 'CSS',
+      icon: BiLogoCss3,
+    },
+    {
+      name: 'HTML',
+      icon: AiFillHtml5,
+    },
   ],
   backend: [
+    {
+      name: 'Python',
+      icon: SiPython,
+    },
+    {
+      name: 'Django',
+      icon: SiDjango,
+    },
     {
       name: 'Node.js',
       icon: GrNode,
@@ -75,12 +87,16 @@ export const data = {
       icon: SiExpress,
     },
     {
-      name: 'MongoDB',
-      icon: BiLogoMongodb,
+      name: 'MySQL',
+      icon: SiMysql,
     },
     {
       name: 'PostgreSQL',
       icon: BiLogoPostgresql,
+    },
+    {
+      name: 'MongoDB',
+      icon: BiLogoMongodb,
     },
     {
       name: 'Prisma',
@@ -101,6 +117,10 @@ export const data = {
     {
       name: 'NGINX',
       icon: SiNginx,
+    },
+    {
+      name: 'Linux',
+      icon: SiLinux,
     },
   ],
 };
