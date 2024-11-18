@@ -12,17 +12,18 @@ import {
 import { BsGit } from 'react-icons/bs';
 import { GrNode } from 'react-icons/gr';
 import {
+  SiDjango,
+  SiDocker,
   SiExpress,
   SiFramer,
   SiGreensock,
-  SiMongoose,
-  SiPrisma,
-  SiDocker,
-  SiNginx,
-  SiPython,
-  SiDjango,
-  SiMysql,
   SiLinux,
+  SiMongoose,
+  SiMysql,
+  SiNginx,
+  SiPrisma,
+  SiPython,
+  SiSqlite,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -49,16 +50,16 @@ export const data = {
       icon: BiLogoRedux,
     },
     {
-      name: 'Tailwind CSS',
-      icon: BiLogoTailwindCss,
-    },
-    {
       name: 'GSAP',
       icon: SiGreensock,
     },
     {
       name: 'Framer Motion',
       icon: SiFramer,
+    },
+    {
+      name: 'Tailwind CSS',
+      icon: BiLogoTailwindCss,
     },
     {
       name: 'CSS',
@@ -87,12 +88,16 @@ export const data = {
       icon: SiExpress,
     },
     {
+      name: 'PostgreSQL',
+      icon: BiLogoPostgresql,
+    },
+    {
       name: 'MySQL',
       icon: SiMysql,
     },
     {
-      name: 'PostgreSQL',
-      icon: BiLogoPostgresql,
+      name: 'SQLite',
+      icon: SiSqlite,
     },
     {
       name: 'MongoDB',
