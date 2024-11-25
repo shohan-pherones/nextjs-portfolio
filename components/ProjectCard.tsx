@@ -199,9 +199,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               transition={getTransition()}
               className='flex flex-wrap items-center gap-x-5 gap-y-1.5'
             >
-              <Link href={live} target='_blank' className='link-item-dark'>
-                Live Link
-              </Link>
+              {live && (
+                <Link href={live} target='_blank' className='link-item-dark'>
+                  Live Link
+                </Link>
+              )}
               {front && (
                 <Link href={front} target='_blank' className='link-item-dark'>
                   Front-End

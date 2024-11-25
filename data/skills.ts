@@ -16,6 +16,7 @@ import {
   SiDocker,
   SiExpress,
   SiFramer,
+  SiGo,
   SiGreensock,
   SiLinux,
   SiMongoose,
@@ -78,6 +79,14 @@ export const data = {
     {
       name: 'Django',
       icon: SiDjango,
+    },
+    {
+      name: 'Go',
+      icon: SiGo,
+    },
+    {
+      name: 'Go Fiber',
+      icon: SiGo,
     },
     {
       name: 'Node.js',

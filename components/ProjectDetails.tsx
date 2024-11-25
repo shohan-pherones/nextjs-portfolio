@@ -87,13 +87,15 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
               transition={getTransition()}
               className='flex flex-wrap items-center gap-5'
             >
-              <Link
-                href={project.live}
-                target='_blank'
-                className={clsx(buttonVariants())}
-              >
-                Live Link
-              </Link>
+              {project?.live && (
+                <Link
+                  href={project.live}
+                  target='_blank'
+                  className={clsx(buttonVariants())}
+                >
+                  Live Link
+                </Link>
+              )}
               {project?.front && (
                 <Link
                   href={project.front}

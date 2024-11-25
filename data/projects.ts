@@ -103,4 +103,19 @@ export const data = [
     duration: 'Nov 16, 2022 - Nov 23, 2022',
     color: '#E3B23C',
   },
+  {
+    id: 8,
+    title: 'Go Inventory',
+    image:
+      'https://res.cloudinary.com/dpkbthpcw/image/upload/v1732522309/nextjs-portfolio/assets/projects/go-inventory_euagty.jpg',
+    description:
+      'This project is a RESTful inventory management system developed using Go Fiber and MongoDB. It provides efficient Create, Read, Update, and Delete (CRUD) operations to manage product inventories with ease. The backend leverages the lightweight and high-performance Go Fiber framework, ensuring quick response times and efficient resource handling. MongoDB serves as the database, offering a flexible and scalable solution for storing product data. Additionally, the system features a Text User Interface (TUI) to fetch and display all product details directly in a console-based environment, enhancing accessibility for users who prefer terminal-based interactions. The system is designed to be modular, maintainable, and scalable, making it an ideal choice for inventory management needs in diverse environments.',
+    tech: 'Go, Go Fiber',
+    live: '',
+    front: '',
+    back: 'https://github.com/shohan-pherones/inventory-management-system',
+    full: '',
+    duration: 'Nov 24, 2024 - Nov 25, 2024',
+    color: '#00FFFF',
+  },
 ];
