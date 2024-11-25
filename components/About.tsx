@@ -78,8 +78,8 @@ const About = () => {
               Hi there! I am Md. Shohanur Rahman, a passionate full-stack web
               developer with a strong focus on the MERN (MongoDB, Express.js,
               React.js, Node.js) stack. Additionally, I am proficient in Python,
-              Django, and Django REST Framework, which further expands my
-              versatility as a developer.
+              Django, Django REST Framework, Go and Go Fiber which further
+              expands my versatility as a developer.
             </motion.p>
           </div>
           <div className='hidden overflow-hidden sm:block'>
