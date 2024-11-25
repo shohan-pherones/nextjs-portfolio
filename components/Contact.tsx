@@ -29,7 +29,7 @@ const Contact = () => {
               transition={getTransition(0.2)}
             >
               <h3 className='text-2xl font-semibold text-dark/50'>
-                Social Media
+                Find Me On
               </h3>
               <div className='flex flex-wrap gap-x-5 gap-y-1.5'>
                 <Link
@@ -59,6 +59,20 @@ const Contact = () => {
                   className='link-item-dark'
                 >
                   HackerRank
+                </Link>
+                <Link
+                  href='https://hub.docker.com/u/spectrashohan'
+                  target='_blank'
+                  className='link-item-dark'
+                >
+                  Docker Hub
+                </Link>
+                <Link
+                  href='https://www.youtube.com/@spectra.shohan'
+                  target='_blank'
+                  className='link-item-dark'
+                >
+                  YouTube
                 </Link>
                 <Link
                   href='https://twitter.com/elysianshohan'
