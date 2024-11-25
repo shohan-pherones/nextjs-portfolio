@@ -85,10 +85,6 @@ export const data = {
       icon: SiGo,
     },
     {
-      name: 'Go Fiber',
-      icon: SiGo,
-    },
-    {
       name: 'Node.js',
       icon: GrNode,
     },

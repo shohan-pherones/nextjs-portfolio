@@ -1,18 +1,18 @@
 export const data = [
   {
     id: 1,
-    title: 'Spectra Chat',
+    title: 'Raviosa',
     image:
-      'https://res.cloudinary.com/dpkbthpcw/image/upload/v1699774098/nextjs-portfolio/assets/projects/spectra-chat_kfgpcs.png',
+      'https://res.cloudinary.com/dpkbthpcw/image/upload/v1732549140/nextjs-portfolio/assets/projects/raviosa_nts75y.png',
     description:
-      'Spectra Chat is a real-time messaging application that allows users to communicate with others in real-time. It offers various features, including chat, profile updates, group chat creation, chat deletion, and photo sharing. Users can sign in using their Google, GitHub, or email and password credentials.',
-    tech: 'NextJS, Prisma, Tailwind CSS, Axios, Cloudinary, Pusher, Zustand, TypeScript',
-    live: 'https://spectra-chat.vercel.app',
-    front: '',
-    back: '',
-    full: 'https://github.com/shohan-pherones/spectra-chat',
-    duration: 'Oct 21, 2023 - Oct 23, 2023',
-    color: '#145C9E',
+      'Raviosa is a cutting-edge cosmetics ecommerce platform designed to provide users with a seamless and secure shopping experience. Built with modern technologies like Node.js, Express, and Next.js, Raviosa ensures efficient performance, robust functionality, and engaging visuals. Users can purchase products, track order progress, and explore a wide range of cosmetics while enjoying a secure and user-friendly interface. The platform is built with a strong focus on scalability, security, and maintainability.',
+    tech: 'Node.js, Express.js, TypeScript, Next.js, React.js, Redux.js, Rx.js, MongoDB, Mongoose, Tailwind CSS, Zod, Jest, Docker, NGINX',
+    live: 'https://raviosa-frontend.vercel.app',
+    front: 'https://github.com/shohan-pherones/raviosa-frontend',
+    back: 'https://github.com/shohan-pherones/raviosa-backend',
+    full: '',
+    duration: 'Nov 19, 2024 - Nov 25, 2024',
+    color: '#FFC0CB',
   },
   {
     id: 2,
@@ -31,6 +31,21 @@ export const data = [
   },
   {
     id: 3,
+    title: 'Spectra Chat',
+    image:
+      'https://res.cloudinary.com/dpkbthpcw/image/upload/v1699774098/nextjs-portfolio/assets/projects/spectra-chat_kfgpcs.png',
+    description:
+      'Spectra Chat is a real-time messaging application that allows users to communicate with others in real-time. It offers various features, including chat, profile updates, group chat creation, chat deletion, and photo sharing. Users can sign in using their Google, GitHub, or email and password credentials.',
+    tech: 'NextJS, Prisma, Tailwind CSS, Axios, Cloudinary, Pusher, Zustand, TypeScript',
+    live: 'https://spectra-chat.vercel.app',
+    front: '',
+    back: '',
+    full: 'https://github.com/shohan-pherones/spectra-chat',
+    duration: 'Oct 21, 2023 - Oct 23, 2023',
+    color: '#145C9E',
+  },
+  {
+    id: 4,
     title: 'Euphoria',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1699774100/nextjs-portfolio/assets/projects/euphoria_nih6se.png',
@@ -45,7 +60,7 @@ export const data = [
     color: '#912F56',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Raptor Media',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1699774098/nextjs-portfolio/assets/projects/raptor-media_jrie5b.png',
@@ -60,7 +75,7 @@ export const data = [
     color: '#1446A0',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Orbit Council',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1699774098/nextjs-portfolio/assets/projects/orbit-council_mdzaa1.png',
@@ -75,7 +90,7 @@ export const data = [
     color: '#1DD3B0',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Torque Xtreme',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1699774100/nextjs-portfolio/assets/projects/torque-xtreme_o0fm6h.png',
@@ -89,7 +104,7 @@ export const data = [
     color: '#F05D5E',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Immemorial',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1699774099/nextjs-portfolio/assets/projects/immemorial_vtw5yn.png',
@@ -104,7 +119,7 @@ export const data = [
     color: '#E3B23C',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Custom Loadbalancer',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1732545634/nextjs-portfolio/assets/projects/custom-loadbalancer_tglvwi.jpg',
@@ -119,7 +134,7 @@ export const data = [
     color: '#A020F0',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Go Inventory',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1732522309/nextjs-portfolio/assets/projects/go-inventory_euagty.jpg',
