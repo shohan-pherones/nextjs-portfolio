@@ -7,7 +7,7 @@ const Projects = () => {
     <section id='projects' className='section-padding'>
       <div className='wrapper'>
         <SectionTitle
-          title='Selected Works (2022 - 2023)'
+          title={`Selected Works (2022 - ${new Date().getFullYear()})`}
           subtitle='Projects'
         />
       </div>

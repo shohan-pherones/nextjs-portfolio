@@ -105,6 +105,21 @@ export const data = [
   },
   {
     id: 8,
+    title: 'Custom Loadbalancer',
+    image:
+      'https://res.cloudinary.com/dpkbthpcw/image/upload/v1732545634/nextjs-portfolio/assets/projects/custom-loadbalancer_tglvwi.jpg',
+    description:
+      'This project is a simple load balancer implementation using Go and Docker. The load balancer distributes incoming requests to multiple backend servers in a round-robin fashion. It helps to balance the load among different servers to ensure high availability and fault tolerance. The backend servers are simple HTTP servers that simulate different service nodes. The project utilizes Docker to containerize all components and Docker Compose to orchestrate the services.',
+    tech: 'Go, Docker',
+    live: '',
+    front: '',
+    back: 'https://github.com/shohan-pherones/custom-loadbalancer',
+    full: '',
+    duration: 'Nov 25, 2024 - Nov 25, 2024',
+    color: '#A020F0',
+  },
+  {
+    id: 9,
     title: 'Go Inventory',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1732522309/nextjs-portfolio/assets/projects/go-inventory_euagty.jpg',
