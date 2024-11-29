@@ -120,7 +120,7 @@ export const data = [
   },
   {
     id: 9,
-    title: 'Custom Loadbalancer',
+    title: 'My Loadbalancer',
     image:
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1732545634/nextjs-portfolio/assets/projects/custom-loadbalancer_tglvwi.jpg',
     description:
