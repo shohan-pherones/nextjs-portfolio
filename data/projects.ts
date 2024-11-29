@@ -6,7 +6,7 @@ export const data = [
       'https://res.cloudinary.com/dpkbthpcw/image/upload/v1732549140/nextjs-portfolio/assets/projects/raviosa_nts75y.png',
     description:
       'Raviosa is a cutting-edge cosmetics ecommerce platform designed to provide users with a seamless and secure shopping experience. Built with modern technologies like Node.js, Express, and Next.js, Raviosa ensures efficient performance, robust functionality, and engaging visuals. Users can purchase products, track order progress, and explore a wide range of cosmetics while enjoying a secure and user-friendly interface. The platform is built with a strong focus on scalability, security, and maintainability.',
-    tech: 'Node.js, Express.js, TypeScript, Next.js, React.js, Redux.js, Rx.js, MongoDB, Mongoose, Tailwind CSS, Zod, Jest, Docker, NGINX',
+    tech: 'TypeScript, Node.js, Express.js, Next.js, React.js, Redux.js, Rx.js, React Hook Form, React Query, MongoDB, Mongoose, Zod, Framer Motion, Tailwind CSS, Docker, NGINX',
     live: 'https://raviosa-frontend.vercel.app',
     front: 'https://github.com/shohan-pherones/raviosa-frontend',
     back: 'https://github.com/shohan-pherones/raviosa-backend',
