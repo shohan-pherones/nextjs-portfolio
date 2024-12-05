@@ -148,4 +148,19 @@ export const data = [
     duration: 'Nov 24, 2024 - Nov 25, 2024',
     color: '#00FFFF',
   },
+  {
+    id: 11,
+    title: 'DJ Blog',
+    image:
+      'https://res.cloudinary.com/dpkbthpcw/image/upload/v1733407959/nextjs-portfolio/assets/projects/dj-blog_kaxgpb.png',
+    description:
+      'DJ Blog is a sleek and developer-friendly blogging platform built entirely with Django and styled using Tailwind CSS. It offers a straightforward yet powerful solution for developers to share knowledge, write tutorials, and showcase their projects in a clean and intuitive interface. Designed with simplicity and functionality in mind, DJ Blog empowers users to focus on content creation without being bogged down by technical complexities. Whether you are sharing coding tips documenting your latest project, or writing in-depth tutorials, DJ Blog provides all the essential tools to make your content stand out. With a responsive, mobile-first design powered by Tailwind CSS, your blog will look great on any device.',
+    tech: 'Python, Django, PostgreSQL, Docker, NGINX',
+    live: 'https://djblog-2vnf.onrender.com',
+    front: '',
+    back: '',
+    full: 'https://github.com/shohan-pherones/dj_blog',
+    duration: 'Dec 4, 2024 - Dec 5, 2024',
+    color: '#44B78B',
+  },
 ];
