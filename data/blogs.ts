@@ -28,19 +28,6 @@ export const data = [
   {
     id: 3,
     title:
-      'Understanding Color Theory in CSS: A Guide to Harmonious Web Design',
-    author: 'Md. Shohanur Rahman',
-    authorUrl: 'https://www.linkedin.com/in/shohan-pherones',
-    publishedDate: 'Jun 20, 2023',
-    image:
-      'https://res.cloudinary.com/dpkbthpcw/image/upload/v1710405559/nextjs-portfolio/assets/blogs/1687240286524_t71yqc.jpg',
-    body: "Color plays a vital role in web design, evoking emotions, conveying messages, and capturing users' attention. As a web developer or designer, having a solid grasp of color theory is crucial for creating visually appealing and harmonious websites. In this article, we'll explore the fundamentals of color theory and how to apply them using CSS.",
-    blogUrl:
-      'https://www.linkedin.com/pulse/understanding-color-theory-css-guide-harmonious-web-design-rahman/?trackingId=QZIPXD2%2FRO6i9v0suzZApQ%3D%3D',
-  },
-  {
-    id: 4,
-    title:
       'Choosing Between Express and Next.js: A Guide for Backend Development',
     author: 'Md. Shohanur Rahman',
     authorUrl: 'https://www.linkedin.com/in/shohan-pherones',

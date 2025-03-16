@@ -31,14 +31,6 @@ import { TbBrandNextjs } from 'react-icons/tb';
 export const data = {
   frontend: [
     {
-      name: 'TypeScript',
-      icon: BiLogoTypescript,
-    },
-    {
-      name: 'JavaScript',
-      icon: BiLogoJavascript,
-    },
-    {
       name: 'Next.js',
       icon: TbBrandNextjs,
     },
@@ -51,39 +43,19 @@ export const data = {
       icon: BiLogoRedux,
     },
     {
-      name: 'GSAP',
-      icon: SiGreensock,
+      name: 'JavaScript',
+      icon: BiLogoJavascript,
     },
     {
-      name: 'Framer Motion',
-      icon: SiFramer,
+      name: 'TypeScript',
+      icon: BiLogoTypescript,
     },
     {
       name: 'Tailwind CSS',
       icon: BiLogoTailwindCss,
     },
-    {
-      name: 'CSS',
-      icon: BiLogoCss3,
-    },
-    {
-      name: 'HTML',
-      icon: AiFillHtml5,
-    },
   ],
   backend: [
-    {
-      name: 'Python',
-      icon: SiPython,
-    },
-    {
-      name: 'Django',
-      icon: SiDjango,
-    },
-    {
-      name: 'Go',
-      icon: SiGo,
-    },
     {
       name: 'Node.js',
       icon: GrNode,
@@ -93,32 +65,8 @@ export const data = {
       icon: SiExpress,
     },
     {
-      name: 'PostgreSQL',
-      icon: BiLogoPostgresql,
-    },
-    {
-      name: 'MySQL',
-      icon: SiMysql,
-    },
-    {
-      name: 'SQLite',
-      icon: SiSqlite,
-    },
-    {
       name: 'MongoDB',
       icon: BiLogoMongodb,
-    },
-    {
-      name: 'Prisma',
-      icon: SiPrisma,
-    },
-    {
-      name: 'Mongoose',
-      icon: SiMongoose,
-    },
-    {
-      name: 'Git',
-      icon: BsGit,
     },
     {
       name: 'Docker',
@@ -127,10 +75,6 @@ export const data = {
     {
       name: 'NGINX',
       icon: SiNginx,
-    },
-    {
-      name: 'Linux',
-      icon: SiLinux,
     },
   ],
 };

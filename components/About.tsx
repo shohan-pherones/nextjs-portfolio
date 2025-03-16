@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Button from './Button';
 import SectionTitle from './SectionTitle';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -75,11 +76,9 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition()}
             >
-              Hi there! I am Md. Shohanur Rahman, a passionate full-stack web
-              developer with a strong focus on the MERN (MongoDB, Express.js,
-              React.js, Node.js) stack. Additionally, I am proficient in Python,
-              Django, Django REST Framework, Go and Go Fiber which further
-              expands my versatility as a developer.
+              Hi there! I&apos;m Md. Shohanur Rahman, a full-stack web developer
+              with a strong focus on the MERN (MongoDB, Express.js, React.js,
+              Node.js) stack.
             </motion.p>
           </div>
           <div className='hidden overflow-hidden sm:block'>
@@ -88,10 +87,12 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition(0.2)}
             >
-              My journey into web development began in February 2022, though my
-              love for programming started in my first year at university. I
-              have a deep passion for JavaScript and continuously explore its
-              intricacies, allowing me to stay ahead in this dynamic field.
+              My journey into web development began in February 2022, but my
+              interest in programming started in my first year at university.
+              Since then, I have dedicated myself to mastering JavaScript and
+              its ecosystem. I enjoy exploring new technologies, improving my
+              problem-solving skills, and building practical applications that
+              enhance user experiences.
             </motion.p>
           </div>
           <div className='hidden overflow-hidden sm:block'>
@@ -100,11 +101,33 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition(0.4)}
             >
-              Throughout my career, I have refined my skills through active
-              coding on platforms like LeetCode and obtained certifications from
-              reputable sources like HackerRank and freeCodeCamp. My expertise
-              is further validated by these accomplishments and ongoing
-              practice.
+              I actively practice coding on platforms like{' '}
+              <Link
+                href='https://leetcode.com/spectrashohan'
+                target='_blank'
+                className='link-item-dark'
+              >
+                LeetCode
+              </Link>{' '}
+              and have earned certifications from{' '}
+              <Link
+                href='https://www.hackerrank.com/profile/shohan_sub_56'
+                target='_blank'
+                className='link-item-dark'
+              >
+                HackerRank
+              </Link>{' '}
+              and{' '}
+              <Link
+                href='https://www.freecodecamp.org/spectrashohan'
+                target='_blank'
+                className='link-item-dark'
+              >
+                freeCodeCamp
+              </Link>
+              . These experiences have sharpened my ability to write clean,
+              efficient code while keeping up with best practices in modern web
+              development.
             </motion.p>
           </div>
           <div className='overflow-hidden'>
@@ -113,11 +136,19 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition(0.6)}
             >
-              Driven by a love for teaching, I also run an online course on MERN
-              stack development, where I foster essential skills such as
-              leadership, teamwork, and public speaking. This experience has
-              enabled me to empower others while enhancing my own understanding
-              of complex concepts.
+              Beyond coding, I have a passion for teaching. I run an online MERN
+              stack course on{' '}
+              <Link
+                href='https://www.youtube.com/@spectra.shohan'
+                target='_blank'
+                className='link-item-dark'
+              >
+                YouTube
+              </Link>{' '}
+              where I help others learn full-stack development while improving
+              my own ability to explain complex concepts. Teaching has
+              strengthened my communication skills and deepened my technical
+              understanding.
             </motion.p>
           </div>
           <div className='overflow-hidden'>
@@ -126,10 +157,11 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition(0.6)}
             >
-              Creativity is integral to my approach; I have a keen eye for
-              design and a knack for crafting captivating animations. I ensure
-              every detail contributes to a visually appealing, engaging user
-              experience.
+              I also have a strong appreciation for design and front-end
+              development. I enjoy working with animations, layouts, and
+              interactive elements to create engaging user experiences. I
+              believe that well-structured, visually appealing applications
+              improve usability and make a lasting impact.
             </motion.p>
           </div>
           <div className='overflow-hidden'>
@@ -138,11 +170,11 @@ const About = () => {
               whileInView={{ y: 0 }}
               transition={getTransition(0.6)}
             >
-              With a strong foundation in both the MERN stack and Django
-              ecosystem, a passion for JavaScript, and a commitment to
-              high-quality results, I am excited to bring innovative solutions
-              to impactful projects and collaborate with like-minded
-              professionals.
+              My goal is to build scalable, maintainable applications and work
+              with teams that value clean code and thoughtful design. I am
+              always open to learning new technologies, taking on challenging
+              projects, and collaborating with other developers to create
+              meaningful solutions.
             </motion.p>
           </div>
           <div className='overflow-hidden'>
