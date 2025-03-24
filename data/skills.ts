@@ -1,31 +1,15 @@
-import { AiFillHtml5 } from 'react-icons/ai';
 import {
   BiLogoCss3,
+  BiLogoHtml5,
   BiLogoJavascript,
   BiLogoMongodb,
-  BiLogoPostgresql,
   BiLogoReact,
   BiLogoRedux,
   BiLogoTailwindCss,
   BiLogoTypescript,
 } from 'react-icons/bi';
-import { BsGit } from 'react-icons/bs';
 import { GrNode } from 'react-icons/gr';
-import {
-  SiDjango,
-  SiDocker,
-  SiExpress,
-  SiFramer,
-  SiGo,
-  SiGreensock,
-  SiLinux,
-  SiMongoose,
-  SiMysql,
-  SiNginx,
-  SiPrisma,
-  SiPython,
-  SiSqlite,
-} from 'react-icons/si';
+import { SiDocker, SiExpress, SiMongoose, SiNginx } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
 export const data = {
@@ -54,6 +38,14 @@ export const data = {
       name: 'Tailwind CSS',
       icon: BiLogoTailwindCss,
     },
+    {
+      name: 'CSS',
+      icon: BiLogoCss3,
+    },
+    {
+      name: 'HTML',
+      icon: BiLogoHtml5,
+    },
   ],
   backend: [
     {
@@ -67,6 +59,10 @@ export const data = {
     {
       name: 'MongoDB',
       icon: BiLogoMongodb,
+    },
+    {
+      name: 'Mongoose',
+      icon: SiMongoose,
     },
     {
       name: 'Docker',
